@@ -1,5 +1,5 @@
 :root {
-    --board-active-color: #E18317;
+    --board-active-color: #365A91;
 }   
 
 /* 관리자 메뉴 */
@@ -11,6 +11,7 @@
     position: absolute; right: 0; top: calc(100% + 12px); padding: 0px 8px; min-width: calc(100% + 20px); border: 1px solid #E6E6E6; text-align: center; z-index: 9; 
     opacity: 0; visibility: hidden; background-color: #fff; 
 }
+
 .menuBox .menuList .subMenu.show{ opacity: 1; visibility: visible; }
 .menuBox .menuList .subMenu .item{ display: block; padding: 6px 2px; color: #666; position: relative; z-index: 1; font-size: 0.9em; background-color: #fff; width: 100%; border: none; }
 .menuBox .menuList .subMenu .item2{ display: block; padding: 6px 2px; color: #666; position: relative; z-index: 1; font-size: 0.9em; }
@@ -21,7 +22,7 @@
     border-right: none; border-bottom: none; position: absolute; transform: rotate(45deg); top: -5px; right: 10px;
 }
 
-.menuBox .menuList .searchBox{ padding: 10px 0; }
+.menuBox .menuList .searchBox{ padding: 10px 0; width: 200px; }
 .menuBox .menuList .searchBox .searchList{ padding: 5px; border-radius: 5px; border: 1px solid #E6E6E6; width: 100%; }
 .menuBox .menuList .searchBox .iptBox{ margin-top: 10px; position: relative; }
 .menuBox .menuList .searchBox .iptBox .ipt{ padding: 5px; border-radius: 5px; border: 1px solid #E6E6E6; padding-right: 30px; }
@@ -56,7 +57,7 @@
 .basicBoardArti .basicList > li .item .center{ text-align: center; }
 .basicBoardArti .basicList > li .item .chk{ flex-shrink: 0; width: 22px; }
 .basicBoardArti .basicList > li .item .number{ flex-shrink: 0; width: 50px; overflow: hidden; }
-.basicBoardArti .basicList > li .item .number.on{ color: #E18317; }
+.basicBoardArti .basicList > li .item .number.on{ color: #365A91; }
 .basicBoardArti .basicList > li .item .title{ justify-content: center; flex-grow: 1; overflow: hidden; gap: 2px; display: flex; gap: 2px;  }
 .basicBoardArti .basicList > li .item .title .iconWrap{ display: flex; align-items: center; gap: 2px; align-items: center; }
 .basicBoardArti .basicList > li .item .title a{ width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -78,6 +79,7 @@
     .basicBoardArti .basicList > li .item .hit::before{ content:'조회수 : '; }
     .basicBoardArti .basicList > li .item .date{ width: 100%; font-size: 0.9em; color: #7F7F7F; }
     .basicBoardArti .basicList > li .item .date::before{ content:'작성일 : '; }
+    .basicBoardArti .basicList > li .item .number.on{ display: flex; }
 }
 
 /* 게시판 글쓰기 */
