@@ -25,10 +25,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     </head>
     <body>
-        <header>
+        <header class="main active"><!--메인에만 main active클래스 넣어주세요. -->
             <div class="inner">
                 <a href="./index.html">
-                    <img src="./img/common/logo.png" alt="The Robotics" class="logo" />
+                    <img src="./img/common/logo.png" alt="The Robotics" class="logo default" />
+                    <img src="./img/common/logo_white.png" alt="The Robotics" class="logo white" />
                 </a>
                 <ul class="menuList">
                     <li>
@@ -124,7 +125,230 @@
         <section class="mobileMenuCloseBg"></section>
 
         <main class="main">
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <article class="mainBannerArti">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="backgroundDiv">
+                                <div class="pcImg bg" style="background-image: url('./img/main/mainBannerArti/background1.png');"></div>
+                                <div class="moImg bg" style="background-image: url('./img/main/mainBannerArti/mobile_background.png');"></div>
+                            </div>
+                            <div class="inner">
+                                <div class="contentDiv">
+                                    <div class="title1">친안전 친환경 로본 플랫폼</div>
+                                    <div class="title2">
+                                        <img src="./img/main/mainBannerArti/logo.png" alt="THE Robotics" class="logo" />
+                                    </div>
+                                    <div class="content">
+                                        로봇으로 사람이 사람답게, 안전한 환경과 지속 가능한 미래를 만들어갑니다. <br/>
+                                        협동로봇을 통해 사람과 자연이 공존하는 세상을 실현합니다. 
+                                    </div>
+                                    <div class="btnWrap">
+                                        <a href="#" class="moreBtn">
+                                            View more <img src="./img/main/mainBannerArti/right_arrow.png" alt="->" class="arrow" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="backgroundDiv">
+                                <div class="pcImg bg" style="background-image: url('./img/main/mainBannerArti/background1.png');"></div>
+                                <div class="moImg bg" style="background-image: url('./img/main/mainBannerArti/mobile_background.png');"></div>
+                            </div>
+                            <div class="inner">
+                                <div class="contentDiv">
+                                    <div class="title1">친안전 친환경 로본 플랫폼</div>
+                                    <div class="title2"> <img src="./img/main/mainBannerArti/logo.png" alt="THE Robotics" class="logo" /></div>
+                                    <div class="content">
+                                        로봇으로 사람이 사람답게, 안전한 환경과 지속 가능한 미래를 만들어갑니다. <br/>
+                                        협동로봇을 통해 사람과 자연이 공존하는 세상을 실현합니다. 
+                                    </div>
+                                    <div class="btnWrap">
+                                        <a href="#" class="moreBtn">
+                                            View more <img src="./img/main/mainBannerArti/right_arrow.png" alt="->" class="arrow" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </article>
+            <article class="solutionArti">
+                <div class="title">
+                    <div class="inner">
+                        사람에게 필요한 만큼의<br/>솔루션을 제공합니다
+                    </div>  
+                </div>
+                
+                <div class="leftText">
+                    We innovate in robot <b>T</b>echnology<br/>
+                    for <b>H</b>uman and <b>E</b>nvironment 
+                </div>
+                <div class="inner">
+                    <div class="rightBox">
+                        <div class="text">
+                            현재의 문제에 집중하여<br/>
+                            현실적인 솔루션을 제공하고<br/>
+                            미래를 점진적으로 개발하고 나아갑니다
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="counterArti">
+                <div class="inner">
+                    <div class="mainTitle">
+                        더로보틱스의 로봇은<br/>
+                        지금도 사람과 함께 일하고 있습니다.
+                    </div>
+                    <ul class="itemList">
+                        <li>
+                            <div class="item">
+                                <div class="iconBox icon1"></div>
+                                <div class="title">대체 작업 시간</div>
+                                <div class="counterDiv">
+                                    <div class="count">630</div>시간
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="iconBox icon2"></div>
+                                <div class="title">생산된 로봇 수</div>
+                                <div class="counterDiv">
+                                    <div class="count">1,300</div>만대
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="iconBox icon3"></div>
+                                <div class="title">인건비 절약 효과</div>
+                                <div class="counterDiv">
+                                    <div class="count">13,3650,000</div>원
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="robotArti">
+                <div class="inner">
+                    <div class="circleBar"></div>
+                    <div class="slideBox">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                        <div class="item">
+                                            <div class="robotBox robot1"></div>
+                                            <div class="title">자울 추종 <br/>주행 로봇</div>
+                                            <div class="textBox">
+                                                노지 환경에서의 추종 알고리즘<br/>
+                                                장애물 회피, 자율 주행 탑재
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="robotBox robot2"></div>
+                                        <div class="title">덤프/리프트<br/>추종 주행 로봇</div>
+                                        <div class="textBox">
+                                            기존 자율 추종 주행 로봇에 <br/>
+                                            덤프, 리프트 기능 추가 탑재
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="robotBox robot3"></div>
+                                        <div class="title">수질 측정 /<br/>배관 탐사 로봇</div>
+                                        <div class="textBox">
+                                            수상에서 원격으로 수질측정,<br/>
+                                            실시간 데이터 전송
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="robotBox robot4"></div>
+                                        <div class="title">자율 추종<br/>주행 모듈</div>
+                                        <div class="textBox">
+                                            모든 기계에 호환가능한 <br/>추종 , 자율 주행 모듈화
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="rogotList">
+                        <li>
+                            <div class="item">
+                                <img src="./img/main/robotArti/item1_active.png" alt="자율 추종 주행 로봇" class="robot robot1" />
+                                <div class="textBox">
+                                    노지 환경에서의 추종 알고리즘<br/>
+                                    장애물 회피, 자율 주행 탑재
+                                </div>
+                                <div class="circle">
+                                    <div class="small_circle"></div>
+                                </div>
+                                <div class="name">
+                                    자율 추종<br/>
+                                    주행 로봇
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="./img/main/robotArti/item2_active.png" alt="덤프/리프트 추종 주행 로봇" class="robot robot2" />
+                                <div class="textBox">
+                                    기존 자율 추종 주행 로봇에 <br/>
+                                    덤프, 리프트 기능 추가 탑재
+                                </div>
+                                <div class="circle">
+                                    <div class="small_circle"></div>
+                                </div>
+                                <div class="name">
+                                    덤프/리프트<br/>
+                                    추종 주행 로봇
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="./img/main/robotArti/item3_active.png" alt="수질 측정 / 배관 탐사 로봇" class="robot robot3" />
+                                <div class="textBox">
+                                    기존 자율 추종 주행 로봇에 <br/>
+                                    덤프, 리프트 기능 추가 탑재
+                                </div>
+                                <div class="circle">
+                                    <div class="small_circle"></div>
+                                </div>
+                                <div class="name">
+                                    수질 측정 / <br/>
+                                    배관 탐사 로봇
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="./img/main/robotArti/item4_active.png" alt="수질 측정 / 배관 탐사 로봇" class="robot robot4" />
+                                <div class="textBox">
+                                    모든 기계에 호환가능한 <br/>추종 , 자율 주행 모듈화
+                                </div>
+                                <div class="circle">
+                                    <div class="small_circle"></div>
+                                </div>
+                                <div class="name">
+                                    자율 추종<br/>
+                                    주행 모듈
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
         </main>
 
         <!--개인정보처리방침-->

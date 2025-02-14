@@ -39,7 +39,8 @@ select::-ms-expand{ display:none; }
 
 
 /* header */
-header{ font-size: 14px; position: fixed; width: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.6); padding: 20px 0; z-index: 9999; }
+header{ transition: background .5s; font-size: 14px; position: fixed; width: 100%; left: 0; top: 0; background-color: #000; padding: 20px 0; z-index: 9999; }
+header.main.active{ background: rgba(0,0,0,0.6); }
 header .inner{ display: flex; align-items: center; justify-content: space-between; }
 header .menuList{ color: #fff; display: flex; align-items: center; gap: 48px; }
 header .menuList > li{ position: relative; display: flex; align-items: center; justify-content: center; }
@@ -50,8 +51,9 @@ header .menuList .subMenu .sub_item{ padding: 5px 0; display: block; }
 header .langMenu{ display: flex; align-items: center; gap: 2px; color: #7F7F7F; }
 header .langMenu .active{ color: #fff; }
 header .sideMenuBtn{ display: none; }
-
-
+header .logo.default{ display: none; }
+header.main.active .logo.default{ display: block; }
+header.main.active .logo.white{ display: none; }
 .menuCloseBg{ opacity: 0; visibility: hidden; cursor: pointer; width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 999; }
 .menuCloseBg.show{ opacity: 1; visibility: visible; }
 
@@ -140,6 +142,164 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 	.privacyPopup .contentWrap .titleBox span{ font-size: 18px; }
 	.privacyPopup .contentWrap .contentBox{ padding: 15px; margin-top: 20px; font-size: 14px; }
 }
+
+/* .main .mainBannerArti */
+.main .mainBannerArti{ position: relative; overflow: hidden; }
+.main .mainBannerArti .swiper{  }
+.main .mainBannerArti .swiper-slide{ position: relative; }
+.main .mainBannerArti .backgroundDiv .bg{ background-size: cover; background-repeat: no-repeat; background-position: center; min-height: 100vh;  padding: 100px 0; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.main .mainBannerArti .backgroundDiv .bg.moImg{ display: none; }
+.main .mainBannerArti .inner{ position: relative; z-index: 2; min-height: 100vh; padding: 100px 0; display: flex; flex-direction: column; justify-content: flex-end; color: #fff; }
+.main .mainBannerArti .contentDiv .title1{ font-size: 2em; font-weight: 500; }
+.main .mainBannerArti .contentDiv .title2{ font-size: 5em; }
+.main .mainBannerArti .contentDiv .content{ margin-top: 10px; line-height: 1.5em; }
+.main .mainBannerArti .btnWrap{ margin-top: 40px; display: flex; align-items: center; justify-content: flex-start; }
+.main .mainBannerArti .btnWrap .moreBtn{ font-size: 1.125em; display: flex; align-items: center; gap: 10px; padding: 15px 30px; border-radius: 50px; background-color: rgba(120, 219, 90, 0.7);  }
+.main .mainBannerArti .swiper-pagination{ position: absolute; left: 0 !important; width: auto !important; padding-left: calc((100% - 1200px) / 2); bottom: 60px; }
+.main .mainBannerArti .swiper-pagination-bullet{ opacity: 1; background-color: rgba(255, 255, 255, 0.20); width:12px; height: 12px; border-radius: 50%; }
+.main .mainBannerArti .swiper-pagination-bullet-active{ background-color: #fff; }
+
+@media screen and (max-width: 1250px) {
+    .main .mainBannerArti .inner{ margin: 0 10px; }
+    .main .mainBannerArti .swiper-pagination{ padding: 0 10px; }
+}
+@media screen and (max-width: 900px) {
+    .main .mainBannerArti .inner{ font-size: 2vw; }
+    .main .mainBannerArti .backgroundDiv .bg.pcImg{ display: none; }
+    .main .mainBannerArti .backgroundDiv .bg.moImg{ display: block; }
+}
+@media screen and (max-width: 650px) {
+    .main .mainBannerArti .inner{ font-size: 3vw; }
+    .main .mainBannerArti .contentDiv .title1{ font-size: 1.8em; }
+    .main .mainBannerArti .contentDiv .title2{ font-size: 4em; }
+    .main .mainBannerArti .contentDiv .title2 .logo{ display: block; width: 80vw; max-width: 380px; margin:10px 0; }
+
+    .main .mainBannerArti .btnWrap{ margin-top: 5vw; }
+    .main .mainBannerArti .btnWrap .moreBtn{ padding: 2vw 4vw; border-radius: 20vw;  }
+    .main .mainBannerArti .btnWrap .moreBtn .icon{ width: 2vw; }
+    .main .mainBannerArti .swiper-pagination-bullet{ width: 2vw; height: 2vw; }
+}
+
+/* .main .solutionArti */
+.main .solutionArti{ position: relative; padding: 50px 0; background-image: url('../img/main/solutionArti/right_circle.png'); background-position: right bottom -20px; background-size: 40%; background-repeat: no-repeat; }
+.main .solutionArti .inner{ position: relative; }
+.main .solutionArti .title{  
+    font-weight: 700; font-size: 50px; padding: 10px 0; line-height: 1.5em;
+    background-image: url('../img/main/solutionArti/title_bg.png'); background-repeat: no-repeat; background-position: left center; background-size: 40% 100%; 
+}
+.main .solutionArti .leftText{ font-size: 64px; color: #c1c1c1; text-align: right; position: absolute; left: 10px; bottom: 100px; }
+.main .solutionArti .leftText b{ font-size: 1.125em; font-weight: 700; color: #00AE00; }
+.main .solutionArti .rightBox{ margin-top: 180px; text-align: right; line-height: 1.5em; font-size: 30px; font-weight: 700; }
+
+@media screen and (max-width: 1388px) {
+    .main .solutionArti .leftText{ font-size: 4vw; }
+    .main .solutionArti .title{ font-size: 35px; }
+    .main .solutionArti .rightBox{ margin-top: 10vw; font-size: 24px; }
+}
+@media screen and (max-width: 1250px) {
+    .main .solutionArti .title{ background-position: left -10% center; }
+}
+@media screen and (max-width: 800px) {
+    .main .solutionArti .leftText{ font-size: 6vw; position: static; text-align: left; margin-top: 20px; padding-left: 10px; }
+    .main .solutionArti .rightBox{ margin-top: 20px; }
+}
+@media screen and (max-width: 650px) {
+    .main .solutionArti{ background-size: 90%; }
+    .main .solutionArti .title{ font-size: 20px; }
+    .main .solutionArti .rightBox{ font-size: 18px; }
+}
+
+/* .main .counterArti */
+.main .counterArti{ padding: 100px 0; }
+.main .mainTitle{ text-align: center; font-size: 38px; font-weight: 700;  }
+.main .counterArti .itemList{ margin-top: 46px; flex-wrap: wrap;  padding: 20px; border-radius: 10px; display: flex; background: #fff; box-shadow: 5px 10px 14px 0px rgba(0, 0, 0, 0.15); border-radius: 10px; }
+.main .counterArti .itemList > li{ width: calc(100% / 3); text-align: center; }
+.main .counterArti .itemList > li + li{ border-left: 1px solid #E4E4E4; }
+.main .counterArti .itemList .item{ padding: 20px; }
+.main .counterArti .itemList .item .iconBox{ margin: 0 auto; width: 50px; height: 50px; background-size: contain; background-repeat: no-repeat; background-position: center; }
+.main .counterArti .itemList .item .iconBox.icon1{ background-image: url('../img/main/counterArti/icon1.png'); }
+.main .counterArti .itemList .item .iconBox.icon2{ background-image: url('../img/main/counterArti/icon2.png'); }
+.main .counterArti .itemList .item .iconBox.icon3{ background-image: url('../img/main/counterArti/icon3.png'); }
+.main .counterArti .itemList .item .title{ margin-top: 5px; font-size: 20px; color: #7f7f7f;  }
+.main .counterArti .itemList .item .counterDiv{ margin-top: 6px; display: flex; align-items: flex-end; justify-content: center; gap: 5px; font-weight: 700; font-size: 32px; }
+.main .counterArti .itemList .item .counterDiv .count{ font-size: 1.5em; }
+
+@media screen and (max-width: 1250px) {
+    .main .mainTitle{ font-size: 30px; }
+    .main .counterArti .itemList .item .counterDiv{ font-size: 24px; }
+    .main .counterArti .itemList .item .title{ font-size: 18px; }
+}
+@media screen and (max-width: 950px) {
+    .main .counterArti .itemList .item{ padding: 10px; font-size: 16px; }
+    .main .counterArti .itemList .item .counterDiv{ font-size: 16px; }
+}
+@media screen and (max-width: 900px) {
+    .main .counterArti .itemList .item .title{ font-size: 16px; }
+}
+@media screen and (max-width: 650px) {
+    .main .mainTitle{ font-size: 20px; }
+    .main .counterArti{ padding: 50px 0; }
+    .main .counterArti .itemList{ flex-direction: column; max-width: 300px; margin: 0 auto; margin-top: 30px; }
+    .main .counterArti .itemList > li + li{ border-left: unset; border-top: 1px solid #e4e4e4; }
+    .main .counterArti .itemList > li{ padding: 20px 10px; width: 100%; }
+}
+
+/* .main .robotArti */
+.main .robotArti{ padding: 100px 0; position: relative; overflow: hidden; background-image: url('../img/main/robotArti/background_gradient.png'); background-repeat: no-repeat; background-position: bottom center; background-size: cover;  }
+.main .robotArti .inner{align-items: center; flex-direction: column; position: relative; display: flex; justify-content: center; }
+.main .robotArti .rogotList{ position: relative; z-index: 2; display: flex; flex-wrap: wrap; text-align: center; align-items: flex-end; }
+.main .robotArti .rogotList > li{ cursor: pointer; opacity: 0.63; width: calc(100% / 4); padding: 10px; transition: opacity .5s; }
+.main .robotArti .rogotList > li.active{ opacity: 1; }
+.main .robotArti .rogotList > li:nth-child(2),
+.main .robotArti .rogotList > li:nth-child(3){ margin-bottom: 40px; }
+.main .robotArti .rogotList .item{ cursor: pointer; display: flex; flex-direction: column; gap: 20px; justify-content: center; align-items: center; }
+.main .robotArti .rogotList .item .textBox{ width: 100%; padding: 20px 10px; border-radius: 20px; font-weight: 500; background-color: rgba(194, 194, 194); font-size: 20px; }
+.main .robotArti .rogotList > li.active .item .textBox{ background-color: #A1E68C; }
+.main .robotArti .rogotList .item .circle{ display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background-color: rgba(120, 219, 90, 0.70); }
+.main .robotArti .rogotList .item .circle .small_circle{ width: 50%; height: 50%; background-color: #00AE00; border-radius: 50%; }
+.main .robotArti .rogotList .item .name{ font-size: 32px; font-weight: 700; }
+.main .robotArti .circleBar{ width: 200%; height: 1500px; border:  3px solid #00AE00; border-radius: 50%; position: absolute; top:calc( 100% - 183px) }
+
+.main .robotArti .slideBox{ display: none; }
+
+@media screen and (max-width: 1250px) { 
+    .main .robotArti .rogotList .item .robot{ max-width: 100%; }
+    .main .robotArti .rogotList .item .textBox{ font-size: 16px; padding: 15px 10px; }
+    .main .robotArti .rogotList .item .circle{ width: 30px; height: 30px; }
+    .main .robotArti .rogotList .item .name{ font-size: 24px; }
+    .main .robotArti .circleBar{ width: 161%; height: 164%; top:calc( 100% - 145px); }
+
+    .main .robotArti .rogotList > li:nth-child(2), 
+    .main .robotArti .rogotList > li:nth-child(3){ margin-bottom: 3.7%; }
+}
+@media screen and (max-width: 950px) {
+    .main .robotArti{ padding-top: 50px; padding-bottom: 0; }
+    .main .robotArti .circleBar{ width: calc(120% + 6px); height: 54vw; top:unset; bottom: -46.3vw; }
+    .main .robotArti .rogotList > li{ padding: 1vw; }
+    .main .robotArti .rogotList .item .circle{ width: 2vw; height: 2vw; }
+    .main .robotArti .rogotList .item .textBox{ display: none; }
+    .main .robotArti .rogotList .item .name{ display: none; }
+    .main .robotArti .rogotList > li:nth-child(2), 
+    .main .robotArti .rogotList > li:nth-child(3){ margin-bottom:5vw; }
+
+    .main .robotArti .slideBox{ display: block; position: relative; width: 100%; }
+    .main .robotArti .slideBox .item { display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 10px; }
+    .main .robotArti .slideBox .item .robotBox{ width: 100%; height: 40vw; max-height: 250px; background-size: contain; background-repeat: no-repeat; background-position: center; }
+    .main .robotArti .slideBox .item .robotBox.robot1{ background-image: url('../img/main/robotArti/item1_active.png'); }
+    .main .robotArti .slideBox .item .robotBox.robot2{ background-image: url('../img/main/robotArti/item2_active.png'); }
+    .main .robotArti .slideBox .item .robotBox.robot3{ background-image: url('../img/main/robotArti/item3_active.png'); }
+    .main .robotArti .slideBox .item .robotBox.robot4{ background-image: url('../img/main/robotArti/item4_active.png'); }
+    
+    .main .robotArti .slideBox .item .title{ font-size: 20px; font-weight: 700; margin-top: 30px; }
+    .main .robotArti .slideBox .item .textBox{ font-size: 18px; margin: 20px 0; padding: 20px 10px; border-radius: 5px; background-color: #A1E68C; }
+    
+    .main .robotArti .rogotList .item.active{ opacity:1; }
+}
+@media screen and (max-width: 650px) {
+    .main .robotArti .rogotList .item .circle{ width: 3vw; height: 3vw; }
+    .main .robotArti .circleBar{ bottom: -45.8vw; }
+}
+
 
 
 

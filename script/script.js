@@ -7,7 +7,67 @@ document.addEventListener("DOMContentLoaded", function(e){
     /* 개인정보 처리방침 , 이용약관*/
     privacyUsePopup();
 
+    mainHeaderHandler();
+    mainBannerSlideHandler();
+    mainRobotHandler();
+    
 })
+
+const mainRobotHandler = () => {
+   
+
+    var swiper = new Swiper(".main .robotArti .slideBox .mySwiper", {
+        observer: true,
+        observeParents: true,
+        loop : true,
+        slidesPerView: 1,
+        // centeredSlides: true,
+        loopedSlides: 4,
+        on: {
+            activeIndexChange: function () {
+                $(".main .robotArti .rogotList > li").css('opacity', "0.63");
+                $(".main .robotArti .rogotList > li").eq((this.realIndex)).css('opacity', "1")
+                console.log(this.realIndex)
+            }
+        },
+
+    });
+
+    $('.main .robotArti .rogotList .item').mouseover(function(){
+        const itemIndex = $(this).parent('li').index();
+        $(".main .robotArti .rogotList > li").removeClass('active');
+        $(this).parent('li').addClass('active')
+        swiper.slideTo(itemIndex, 200)
+    })
+}
+
+const mainBannerSlideHandler = () => {
+    var swiper = new Swiper(".main .mainBannerArti .mySwiper", {
+        loop : true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".main .mainBannerArti .swiper-pagination",
+        },
+    });
+}
+
+const mainHeaderHandler = () => {
+    const header_main = document.querySelector('header.main');
+
+    if(header_main){
+        document.addEventListener("scroll", function(){
+            let scroll_top = window.scrollY;
+            if(scroll_top > 0){
+                header_main.classList.remove("active");
+            }else{
+                header_main.classList.add("active");
+            }
+        })
+    }
+}
 
 const privacyUsePopup = () => {
     $('.privacyPopupBtn').click(function(e){
