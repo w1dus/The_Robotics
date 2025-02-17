@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 const robotGoArti = () => {
     var swiper = new Swiper(".robotGoArti .mySwiper", {
         loop : true, 
+        effect: "fade",
     });
 }
 
