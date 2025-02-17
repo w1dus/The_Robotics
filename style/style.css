@@ -291,13 +291,153 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
     .main .robotArti .slideBox .item .robotBox.robot4{ background-image: url('../img/main/robotArti/item4_active.png'); }
     
     .main .robotArti .slideBox .item .title{ font-size: 20px; font-weight: 700; margin-top: 30px; }
-    .main .robotArti .slideBox .item .textBox{ font-size: 18px; margin: 20px 0; padding: 20px 10px; border-radius: 5px; background-color: #A1E68C; }
+    .main .robotArti .slideBox .item .textBox{ font-size: 18px; margin: 20px 0; padding: 10px 20px; border-radius: 5px; background-color: #A1E68C; }
     
     .main .robotArti .rogotList .item.active{ opacity:1; }
 }
 @media screen and (max-width: 650px) {
     .main .robotArti .rogotList .item .circle{ width: 3vw; height: 3vw; }
     .main .robotArti .circleBar{ bottom: -45.8vw; }
+    .main .robotArti .slideBox .item .textBox{ font-size: 14px; }
+}
+
+/* .main .robotGoArti */
+.main .robotGoArti{ position: relative; overflow: hidden;  }
+.main .robotGoArti .swiper-slide{ height: auto !important; }
+.main .robotGoArti .item{ height: 100%; padding:300px 0 100px 0; position: relative; overflow: hidden; }
+.main .robotGoArti .item img{ max-width: 100%; }
+.main .robotGoArti .item .bgBox{ width: 100%; height: 100%; position: absolute; right: 0; top: 0; display: flex; align-items: flex-start; justify-content: flex-end; }
+.main .robotGoArti .item .bgBox .bg:nth-child(2n){ transform: scaleX(-1); }
+.main .robotGoArti .item .bgBox .bg{ height: 100%; max-width: unset; min-height: 100%; }
+.main .robotGoArti .item .inner{ position: relative; z-index: 2; height: 100%; }
+
+.main .robotGoArti .item .halfBox{ display: flex; height: 100%; align-items: flex-end; justify-content: space-between; gap: 20px; }
+.main .robotGoArti .item .halfBox .text{ margin-bottom: 10%; flex-shrink: 0; font-weight: 700; font-size: 38px; }
+.main .robotGoArti .item.item2{ height: 100%; background-color: #222; }
+.main .robotGoArti .item.item2 .halfBox .text{ color: #fff; }
+.main .robotGoArti .item .halfBox .robotWrap{ margin-right: 10%; position: relative; display: flex; align-items: center; justify-content: center; }
+.main .robotGoArti .item .halfBox .robotWrap .robot{ max-width: 100%; position: absolute;  }
+.main .robotGoArti .item .halfBox .robotWrap .robot1{ position: relative; z-index: 2; }
+.main .robotGoArti .item .halfBox .robotWrap .robot2{ left: 20%; opacity: .2; }
+.main .robotGoArti .item .halfBox .robotWrap .robot3{ left: 40%; opacity: .2; }
+
+@media screen and (max-width: 1250px) { 
+    .main .robotGoArti .item{ height: auto; padding: 300px 0 50px 0; }
+    .main .robotGoArti .item .halfBox .text{ font-size: 30px; }
+    .main .robotGoArti .item .halfBox .robotWrap{ width: 40vw; }
+    .main .robotGoArti .item.item3 .halfBox .robotWrap{ width: 60vw; margin-right: 0; }
+    .main .robotGoArti .item .bgBox{ width: 100%; height: 100%; }
+    .main .robotGoArti .item .bgBox .bg{ height: 100%; }
+}
+@media screen and (max-width: 900px) { 
+    .main .robotGoArti .item{ height: 100%; padding: 150px 0 50px 0; }
+    .main .robotGoArti .item .halfBox .text{ margin-bottom: 0; font-size: 20px; }
+    .main .robotGoArti .item .halfBox{ gap: 40px; text-align: center; flex-direction: column; align-items: center; }
+
+    .main .robotGoArti .item .halfBox .robotWrap{ width: 70vw; margin-right: 0; }
+    .main .robotGoArti .item.item3 .halfBox .robotWrap{ width: 100vw; }
+}
+
+
+
+/* .main .technologyArti */
+.main .technologyArti{ padding: 100px 0; position: relative; overflow: hidden; }
+.main .technologyArti .text{ position: absolute; }
+.main .technologyArti .text1{ left: -90px; bottom: 0; }
+.main .technologyArti .text2{ right: -20px; top: 100px; }
+
+.main .technologyArti .inner{ position: relative; z-index: 2; }
+.main .technologyArti .mainTitle{ text-align: left; padding-top: 20px; position: relative; }
+.main .technologyArti .mainTitle::before{ content:''; position: absolute; left: -15px; top: 8px; display: block; width: 15px; height: 15px; border-radius: 50%; background-color: #000; }
+.main .technologyArti .mainTitle::after{ content:''; display: block; width: 6px; height: 6px; background-color: #000; border-radius: 50%; position: absolute; left: 0; top: 0; }
+
+.main .technologyArti .titleList{ margin-top: 50px; display: flex; flex-wrap: wrap; width: calc(100% + 50px); margin-left: -25px; }
+.main .technologyArti .titleList > li{ padding: 25px; width: calc(100% / 2); }
+.main .technologyArti .titleList .imgBox{ height: 420px; border-radius: 10px; background-size: cover; background-repeat: no-repeat; background-position: center; box-shadow: 5px 8px 11px 0px rgba(0, 0, 0, 0.15); }
+.main .technologyArti .titleList .imgBox.bg1{ background-image: url('../img/main/technologyArti/img1.png'); }
+.main .technologyArti .titleList .imgBox.bg2{ background-image: url('../img/main/technologyArti/img2.png'); }
+.main .technologyArti .titleList .category{ margin-top: 20px; display: flex; justify-content: flex-start; }
+.main .technologyArti .titleList .category .label{ font-size: 20px; padding: 5px 10px; border-radius: 4px; color: #fff; background: #000; }
+.main .technologyArti .titleList .content{ margin-top: 8px; line-height: 1.5em; font-size: 18px; color: #7f7f7f; }
+
+@media screen and (max-width: 1250px) {
+    .main .technologyArti .text{ width: 50vw; }
+    .main .technologyArti .mainTitle::before{ content:''; position: absolute; left: -0; top: 6px; display: block; width: 15px; height: 15px; border-radius: 50%; background-color: #000; }
+    .main .technologyArti .mainTitle::after{ content:''; display: block; width: 6px; height: 6px; background-color: #000; border-radius: 50%; position: absolute; left: 15px; top: 0; }
+
+    .main .technologyArti .titleList{ margin-top: 20px; width: calc(100% + 20px); margin-left: -10px; }
+    .main .technologyArti .titleList > li{ padding: 10px; }
+    .main .technologyArti .titleList .imgBox{ height: 34vw; }
+    .main .technologyArti .titleList .category .label{ font-size: 18px; }
+    .main .technologyArti .titleList .content{ font-size: 16px; word-break: keep-all; }
+}
+@media screen and (max-width: 950px) {
+    .main .technologyArti .titleList{ width: calc(100% + 10px); margin-left: -5px; }  
+    .main .technologyArti .titleList > li{ padding: 5px; }
+}
+@media screen and (max-width: 650px) {
+    .main .technologyArti{ padding: 50px 0; }
+    .main .technologyArti .text1{ left: -5vw; bottom: 0; }
+    .main .technologyArti .text2{ right: -5vw; top: 100px; }
+    .main .technologyArti .titleList .imgBox{ border-radius: 4px; }
+    .main .technologyArti .titleList .category{ margin-top: 10px; }
+    .main .technologyArti .titleList .category .label{ font-size: 16px; }
+    .main .technologyArti .titleList .content{ font-size: 14px; }
+    .main .technologyArti .titleList .content br{ display: none; }
+}
+
+/* .main .newsArti */
+.main .newsArti{ padding: 100px 0; }
+.main .newsArti .halfBox{ display: flex; align-items: flex-start; gap: 20px; justify-content: space-between; }
+.main .newsArti .halfBox .leftBox{ flex-shrink: 0; }
+.main .newsArti .halfBox .leftBox .mainTitle{ text-align: left; }
+.main .newsArti .halfBox .leftBox .moreViewBtn{ max-width: 150px; margin-top: 41px; padding: 10px 18px; border-radius: 4px; background-color: #fff; gap: 15px; align-items: center; background-color: #000; display: flex; color: #fff; }
+.main .newsArti .halfBox .rightBox{ max-width: 780px; width: 100%; }
+.main .newsArti .halfBox .rightBox .itemList{ border-top: 1px solid #D9D9D9; }
+.main .newsArti .halfBox .rightBox .itemList > li{ padding: 20px 0; border-bottom: 1px solid #D9D9D9; }
+.main .newsArti .halfBox .rightBox .itemList .titleBox{ gap: 5px; display: flex; align-items: flex-start; justify-content: space-between; }
+.main .newsArti .halfBox .rightBox .itemList .titleBox .title{ font-weight: 500; font-size: 20px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; }
+.main .newsArti .halfBox .rightBox .itemList .date{ margin-top: 2px; color: #7F7F7F; }
+
+@media screen and (max-width: 1050px) {
+    .main .newsArti .halfBox{ flex-direction: column; gap: 20px; justify-content: center; }
+    .main .newsArti .halfBox .leftBox .mainTitle{ text-align: center; }
+    .main .newsArti .halfBox .rightBox{ max-width: unset; }
+    .main .newsArti .halfBox .leftBox{ width: 100%; display: flex; justify-content: space-between; align-items: flex-end; }
+}
+
+@media screen and (max-width: 650px) {
+    .main .newsArti{ padding: 50px 0; }
+    .main .newsArti .halfBox .leftBox .moreViewBtn{ font-size: 14px; padding: 8px 10px; }
+    .main .newsArti .halfBox .rightBox .itemList .titleBox .title{ font-size: 16px; }
+    .main .newsArti .halfBox .rightBox .itemList .date{ font-size: 13px; }
+}
+
+/* .main .logoArti */
+.main .logoArti{ position: relative; overflow: hidden; padding: 100px 0; }
+.main .logoArti .logoBox{ position:relative; }
+.main .logoArti .box2{ margin-top: 50px; }
+.main .logoArti .swiper-wrapper{ align-items: center; transition-timing-function: linear;  }
+.main .logoArti .swiper-slide{ width: auto !important; }
+.main .logoArti .swiper-slide .logo{ max-height: 85px; max-width: 100%; }
+
+@media screen and (max-width: 1250px) {
+    .main .logoArti .swiper-slide .logo{ max-height: 55px; }
+}
+@media screen and (max-width: 650px) {
+    .main .logoArti{ padding: 50px 0; }
+    .main .logoArti .box2{ margin-top: 40px; }
+    .main .logoArti .swiper-slide .logo{ max-height: 35px; }
+}
+
+/* .main .commonApplyArti */
+.main .commonApplyArti{ padding: 100px 0; background-color: #99DA85; position: relative; overflow: hidden; background-image: url('../img/main/commonApplyArti/background.png');  background-size: auto 100%; background-repeat: no-repeat; background-position: right bottom;}
+.main .commonApplyArti .mainTitle{ text-align: left; }
+.main .commonApplyArti .applyBtn{ font-weight: 700; display: flex; margin-top: 40px; border-radius: 10px; border: 2px solid #222; background-color: #fff; max-width: 306px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+
+@media screen and (max-width: 650px) {
+    .main .commonApplyArti{ padding: 50px 0; }
+    .main .commonApplyArti .applyBtn{ max-width: 150px; padding: 10px 15px; margin-top: 20px; border-radius: 5px; }
 }
 
 

@@ -11,11 +11,36 @@ document.addEventListener("DOMContentLoaded", function(e){
     mainBannerSlideHandler();
     mainRobotHandler();
     
+    robotGoArti();
+    mainLogoSlide();
 })
 
-const mainRobotHandler = () => {
-   
+const robotGoArti = () => {
+    var swiper = new Swiper(".robotGoArti .mySwiper", {
+        loop : true, 
+    });
+}
 
+const mainLogoSlide = () => {
+    var swiper = new Swiper(".logoArti .mySwiper", {
+        spaceBetween: 40,
+        slidesPerView: 6,
+        loop : true, 
+        centeredSlides: true,
+        allowTouchMove: false,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        autoplay: {
+            delay: 0, // important !!
+            disableOnInteraction: false,
+        },
+        speed: 5000,
+    });
+}
+
+const mainRobotHandler = () => {
     var swiper = new Swiper(".main .robotArti .slideBox .mySwiper", {
         observer: true,
         observeParents: true,
@@ -27,7 +52,6 @@ const mainRobotHandler = () => {
             activeIndexChange: function () {
                 $(".main .robotArti .rogotList > li").css('opacity', "0.63");
                 $(".main .robotArti .rogotList > li").eq((this.realIndex)).css('opacity', "1")
-                console.log(this.realIndex)
             }
         },
 
