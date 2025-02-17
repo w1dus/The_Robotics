@@ -355,8 +355,6 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
     .main .robotGoArti .item.item3 .halfBox .robotWrap{ width: 100vw; }
 }
 
-
-
 /* .main .technologyArti */
 .main .technologyArti{ padding: 100px 0; position: relative; overflow: hidden; }
 .main .technologyArti .text{ position: absolute; }
@@ -458,8 +456,14 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 }
 
 
-
-
+/* .sec_top */
+.sec_top{ padding-top: 83px; }
+@media screen and (max-width: 1250px) {
+    .sec_top{ padding-top: 71.45px; }
+}
+@media screen and (max-width: 900px) {
+    .sec_top{ padding-top: 51.45px; }
+}
 
 
 

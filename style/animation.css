@@ -9,8 +9,8 @@
 }
 
 .main .robotGoArti .swiper-slide-active .item.item1 .halfBox .robotWrap .robot1{ transform: translateX(40%); animation: item1Move 4s ease-in-out 0s 1 forwards running; }
-.main .robotGoArti .item.item1 .halfBox .robotWrap .robot2{ opacity: 0; animation: item1Opacity2 ease-in-out 4s infinite; }
-.main .robotGoArti .item.item1 .halfBox .robotWrap .robot3{ opacity: 0; animation: item1Opacity ease-in-out 4s infinite; }
+.main .robotGoArti .swiper-slide-active .item.item1 .halfBox .robotWrap .robot2{ opacity: 0; animation: item1Opacity2 ease-in-out 4s infinite; }
+.main .robotGoArti .swiper-slide-active .item.item1 .halfBox .robotWrap .robot3{ opacity: 0; animation: item1Opacity ease-in-out 4s infinite; }
 
 @keyframes item1Move{
     20% { transform: translateX(20%); }
@@ -24,7 +24,7 @@
     20% { opacity: .2; }
     40% { opacity: .2; }
     50%{ opacity: .2; }
-    60%{ opacity: 0; }
+    60%{ opacity: .2; }
     100% { opacity: 0; }
 }
 @keyframes item1Opacity2{
@@ -32,7 +32,7 @@
     20% { opacity: 0; }
     40% { opacity: .2; }
     50%{ opacity: .2; }
-    60%{ opacity: 0; }
+    60%{ opacity: .2; }
     100% { opacity: 0; }
 }
 
