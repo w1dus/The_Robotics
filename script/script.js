@@ -13,7 +13,32 @@ document.addEventListener("DOMContentLoaded", function(e){
     
     robotGoArti();
     mainLogoSlide();
+    menu1_1_hoverHandler();
 })
+
+const menu1_1_hoverHandler = () => {
+    $('.sub.menu1_1 .article05 .circleBox .circle .text').hover(function(){
+        const classData = $(this).attr('data-class');
+        console.log(classData)
+        $('.sub.menu1_1 .article05 .circleBox .circle').removeClass("active1");
+        $('.sub.menu1_1 .article05 .circleBox .circle').removeClass("active2");
+        $('.sub.menu1_1 .article05 .circleBox .circle').removeClass("active3");
+        $('.sub.menu1_1 .article05 .circleBox .circle').addClass(classData);
+
+        $('.sub.menu1_1 .article05 .circleBox .bgCircle').removeClass("active1");
+        $('.sub.menu1_1 .article05 .circleBox .bgCircle').removeClass("active2");
+        $('.sub.menu1_1 .article05 .circleBox .bgCircle').removeClass("active3");
+        $('.sub.menu1_1 .article05 .circleBox .bgCircle').addClass(classData);
+
+        $('.sub.menu1_1 .article05 .circleBox .circle .text').removeClass('active1');
+        $('.sub.menu1_1 .article05 .circleBox .circle .text').removeClass('active2');
+        $('.sub.menu1_1 .article05 .circleBox .circle .text').removeClass('active3');
+
+        if(classData === "active1"){ $('.sub.menu1_1 .article05 .circleBox .circle.circle2 > .text').addClass('active1'); }
+        if(classData === "active2"){ $('.sub.menu1_1 .article05 .circleBox .circle.circle3 > .text').addClass('active2'); }
+        if(classData === "active3"){ $('.sub.menu1_1 .article05 .circleBox .circle.circle4 > .text').addClass('active3'); }
+    })
+}
 
 const robotGoArti = () => {
     var swiper = new Swiper(".robotGoArti .mySwiper", {

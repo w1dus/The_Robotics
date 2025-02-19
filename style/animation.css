@@ -51,3 +51,10 @@
     60%{ transform: translateX(5%) translateY(-2.5%); }
     100%{  transform: translateX(0) translateY(0); }
 }
+
+/* .sub.menu1_1 */
+.sub.menu1_1 .article06 .textWrap .background{ display: block; animation: bgRotate linear 5s infinite both; }
+@keyframes bgRotate{
+    0%{ transform: rotate(0deg); }
+    100%{  transform: rotate(2deg) scale(1.1); }
+}
