@@ -19,7 +19,64 @@ document.addEventListener("DOMContentLoaded", function(e){
     menu2VideoPlayer();
 
     menu2_1_customerSlide();
+
+    mainCountAni();
 })
+
+const mainCountAni = () => {
+    const countList = document.querySelector('.main .counterArti');
+    const numbers = document.querySelectorAll('.main .counterArti .itemList .item .counterDiv .count');
+    const duration = 1; // Duration in seconds
+    if(countList){
+        // Function to reset numbers to 0
+        function resetNumbers() {
+            numbers.forEach(number => {
+                number.textContent = '0';
+            });
+        }
+    
+        // Function to format numbers with commas
+        function formatNumber(num) {
+            return num.toLocaleString();
+        }
+    
+        // Function to animate counting
+        function animateCount() {
+            numbers.forEach(number => {
+                const target = +number.getAttribute('data-count');
+                const increment = target / (duration * 60); // 60 frames per second
+                let current = 0;
+    
+                function updateCount() {
+                    current += increment;
+                    if (current < target) {
+                        number.textContent = formatNumber(Math.ceil(current));
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        number.textContent = formatNumber(target);
+                    }
+                }
+                updateCount();
+            });
+        }
+    
+        // Intersection Observer to detect visibility
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    countList.classList.add('on');
+                    animateCount();
+                } else {
+                    countList.classList.remove('on');
+                    resetNumbers();
+                }
+            });
+        }, {
+            threshold: 0.5 // Adjust threshold as needed
+        });
+        observer.observe(countList);
+    }
+}
 
 const menu2_1_customerSlide = () => {
     var swiper = new Swiper(".sub.menu2 .customerSection .slideBox .mySwiper", {
@@ -97,6 +154,7 @@ const mainLogoSlide = () => {
 }
 
 const mainRobotHandler = () => {
+    $(".main .robotArti .rogotList > li").eq(0).css('oapcity', "1")
     var swiper = new Swiper(".main .robotArti .slideBox .mySwiper", {
         observer: true,
         observeParents: true,
