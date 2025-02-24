@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 })
 
 const menu2_1_customerSlide = () => {
-    var swiper = new Swiper(".sub.menu2_1 .customerSection .slideBox .mySwiper", {
+    var swiper = new Swiper(".sub.menu2 .customerSection .slideBox .mySwiper", {
         loop : true,
         effect : "fade" ,
         autoplay: {
@@ -30,8 +30,8 @@ const menu2_1_customerSlide = () => {
             disableOnInteraction: false,
         },
         navigation: {
-          nextEl: ".sub.menu2_1 .customerSection .slideBox .nextBtn",
-          prevEl: ".sub.menu2_1 .customerSection .slideBox .prevBtn",
+          nextEl: ".sub.menu2 .customerSection .slideBox .nextBtn",
+          prevEl: ".sub.menu2 .customerSection .slideBox .prevBtn",
         },
       });
 }
