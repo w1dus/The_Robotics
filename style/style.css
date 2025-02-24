@@ -1247,7 +1247,14 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 }
 
 
+/* 2/24 */
 
-
-
+.sub.menu2_4 .peopleSection { background-color: #00306C; }
+.sub.menu2_4 .topBarTitle::before { background-color: #004099; }
+.sub.menu2_4 .customerSection .slideBox .item .nameBox { background-color: #004099; }
+.sub.menu2_4 .customerSection .slideBox .item .imgBox.img1 { background: url('../img/sub/menu2_4/customerSection/img1.png') no-repeat center / cover; }
+.sub.menu2_4 .customerSection .slideBox .item .imgBox.img2 { background: url('../img/sub/menu2_4/customerSection/img2.png') no-repeat center / cover; }
+.sub.menu2_4 .customerSection .slideBox .item .imgBox.img3 { background: url('../img/sub/menu2_4/customerSection/img3.png') no-repeat center / cover; }
+.sub.menu2_4 .productSection .downloadBoxWrap .downloadBtn { max-width: 590px; }
+.sub.menu2_4 .productSection .downloadBoxWrap { justify-content: center; align-items: center; }
 
