@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--페럴렉스-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+        <header class=""><!--메인에만 main active클래스 넣어주세요. -->
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/common/logo.png" alt="The Robotics" class="logo default" />
+                    <img src="./img/common/logo_white.png" alt="The Robotics" class="logo white" />
+                </a>
+                <ul class="menuList">
+                    <li>
+                        <a href="./menu1_1.html">회사소개</a>
+                        <ul class="subMenu">
+                            <li><div class="title">회사소개</div></li>
+                            <li><a href="./menu1_1.html" class="sub_item">인사말</a></li>
+                            <li><a href="./menu1_2.html" class="sub_item">연혁</a></li>
+                            <li><a href="./menu1_3.html" class="sub_item">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./menu2_1.html">제품</a>
+                        <ul class="subMenu">
+                            <li><div class="title">모델</div></li>
+                            <li><a href="./menu2_1.html" class="sub_item">봇박스</a></li>
+                            <li><a href="./menu2_2.html" class="sub_item">봇박스 +</a></li>
+                            <li><a href="./menu2_3.html" class="sub_item">뷰립</a></li>
+                            <li><a href="./menu2_4.html" class="sub_item">아이파이</a></li>
+                            <li><div class="title">플랫폼</div></li>
+                            <li><a href="./menu2_5.html" class="sub_item">추종/자율주행 모듈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./menu3_2.html">블로그</a>
+                        <ul class="subMenu">
+                            <li><div class="title">블로그</div></li>
+                            <li><a href="./menu3_2.html" class="sub_item">고객사례</a></li>
+                            <li><a href="./menu3_3.html" class="sub_item">뉴스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./apply.html">문의</a></li>
+                </ul>
+                <ul class="langMenu">
+                    <li class="active"><a href="./index.html">KR</a></li>
+                    <li class="active">/</li>
+                    <li><a href="#">EN</a></li>
+                </ul>
+                <button type="button" class="sideMenuBtn">
+                    <img src="./img/common/side_menu_icon.png" alt="메뉴" class="icon" />
+                </button>
+            </div>
+        </header>
+        <section class="menuCloseBg"></section>
+        <section class="rightSideMenu">
+            <div class="btnWrapDiv">
+                <button type="button" class="closeBtn">
+                    <img src="./img/common/sideMenuCloseBtn.png" alt="X" class="icon" />
+                </button>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">회사소개</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li><a href="./menu1_1.html">인사말</a></li>
+                    <li><a href="./menu1_2.html">연혁</a></li>
+                    <li><a href="./menu1_3.html">오시는길</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">제품</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li class="cetegory2">모델</li>
+                    <li><a href="./menu2_1.html">봇박스</a></li>
+                    <li><a href="./menu2_2.html">봇박스 +</a></li>
+                    <li><a href="./menu2_3.html">뷰립</a></li>
+                    <li><a href="./menu2_4.html">아이파이</a></li>
+                    <li class="cetegory2">모델</li>
+                    <li><a href="./menu2_5.html">추종/자율주행 모듈</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">블로그</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li><a href="./menu3_2.html">고객사례</a></li>
+                    <li><a href="./menu3_2.html">뉴스</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <a href="./apply.html" class="category1Box">
+                    <div class="title">문의</div>
+                </a>
+            </div>
+        </section>
+        <section class="mobileMenuCloseBg"></section>
+<!-- 2/19 최인수 -->
+        <main class="sub sec_top menu3 menu3_2">
+            <section class="subWrapSection">
+                <article class="article01">
+                    <div class="inner">
+                        <ul class="siteMapBox">
+                            <li><a href="./index.html"><img src="./img/common/home_icon.png" class="icon" alt="홈"/></a></li>
+                            <li class="dot"></li>
+                            <li><a href="./menu3_2.html">블로그</a></li>
+                            <li class="dot"></li>
+                            <li class="active"><a href="./menu3_2.html">고객사례</a></li>
+                        </ul>
+                        <div class="subBigTitle">고객사례</div>
+                    </div>
+                </article>
+                <article class="article02">
+                    <div class="inner">
+                        <div class="topBarTitle">
+                            더 로보틱스 사용 후기
+                        </div>
+                        <ul class="blogUl">
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Gwangju Techno Park, Korea
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            Planning for CO2 free hydrogen production using 
+                                            waste plastic and development and commercializa
+                                            tion of village-type microgrid power generation 
+                                            system (Aug.2021 - Dec.2021)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Dr. Bill Grieco
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            US MIT Chemical engineering (‘98)
+                                            Former CEO of RAPID Manufacturing Institute, 
+                                            AIChE (American Institute of Chemical Engineers)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Gwangju Techno Park, Korea
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            Planning for CO2 free hydrogen production using 
+                                            waste plastic and development and commercializa
+                                            tion of village-type microgrid power generation 
+                                            system (Aug.2021 - Dec.2021)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Gwangju Techno Park, Korea
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            Planning for CO2 free hydrogen production using 
+                                            waste plastic and development and commercializa
+                                            tion of village-type microgrid power generation 
+                                            system (Aug.2021 - Dec.2021)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Dr. Bill Grieco
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            US MIT Chemical engineering (‘98)
+                                            Former CEO of RAPID Manufacturing Institute, 
+                                            AIChE (American Institute of Chemical Engineers)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Gwangju Techno Park, Korea
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            Planning for CO2 free hydrogen production using 
+                                            waste plastic and development and commercializa
+                                            tion of village-type microgrid power generation 
+                                            system (Aug.2021 - Dec.2021)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Gwangju Techno Park, Korea
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            Planning for CO2 free hydrogen production using 
+                                            waste plastic and development and commercializa
+                                            tion of village-type microgrid power generation 
+                                            system (Aug.2021 - Dec.2021)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Dr. Bill Grieco
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            US MIT Chemical engineering (‘98)
+                                            Former CEO of RAPID Manufacturing Institute, 
+                                            AIChE (American Institute of Chemical Engineers)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Gwangju Techno Park, Korea
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            Planning for CO2 free hydrogen production using 
+                                            waste plastic and development and commercializa
+                                            tion of village-type microgrid power generation 
+                                            system (Aug.2021 - Dec.2021)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Gwangju Techno Park, Korea
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            Planning for CO2 free hydrogen production using 
+                                            waste plastic and development and commercializa
+                                            tion of village-type microgrid power generation 
+                                            system (Aug.2021 - Dec.2021)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Dr. Bill Grieco
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            US MIT Chemical engineering (‘98)
+                                            Former CEO of RAPID Manufacturing Institute, 
+                                            AIChE (American Institute of Chemical Engineers)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="blogList">
+                                <div class="item">
+                                    <div class="imgBox"></div>
+                                    <div class="blogBox">
+                                        <p class="blogTitle">
+                                            Gwangju Techno Park, Korea
+                                        </p>
+                                        <div class="stick"></div>
+                                        <p class="blogText">
+                                            Planning for CO2 free hydrogen production using 
+                                            waste plastic and development and commercializa
+                                            tion of village-type microgrid power generation 
+                                            system (Aug.2021 - Dec.2021)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu3BottomDiv">
+                            <div class="menuBox menuBox_dn">
+                                <ul class="menuList">
+                                    <!-- <li>
+                                        <a href="./basicList.html" class="item"><img src="./img/boardImg/list.png" alt="목록"/> <p class="txt">목록</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item"><img src="./img/boardImg/corner-up-left.png" alt="답변"/> <p class="txt">답변</p></a>
+                                    </li> -->
+                                    <li>
+                                        <button type="button" class="item"><img src="./img/boardImg/settings.png" alt="관리자"/> <p class="txt">관리자</p></button>
+                                        <ul class="subMenu">
+                                            <li><a href="#" class="item2">수정</a></li>
+                                            <li><a href="#" class="item2">삭제</a></li>
+                                            <li><a href="#" class="item2">복사</a></li>
+                                            <li><a href="#" class="item2">이동</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="./write.html" class="item"><img src="./img/boardImg/write.png" alt="글쓰기"/> <p class="txt">글쓰기</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="paging_box">페이징 위치입니다.</div>
+                            <div class="menuBox">
+                                <ul class="menuList">
+                                    <!-- <li>
+                                        <a href="./basicList.html" class="item"><img src="./img/boardImg/list.png" alt="목록"/> <p class="txt">목록</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item"><img src="./img/boardImg/corner-up-left.png" alt="답변"/> <p class="txt">답변</p></a>
+                                    </li> -->
+                                    <li>
+                                        <button type="button" class="item"><img src="./img/boardImg/settings.png" alt="관리자"/> <p class="txt">관리자</p></button>
+                                        <ul class="subMenu">
+                                            <li><a href="#" class="item2">수정</a></li>
+                                            <li><a href="#" class="item2">삭제</a></li>
+                                            <li><a href="#" class="item2">복사</a></li>
+                                            <li><a href="#" class="item2">이동</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="./write.html" class="item"><img src="./img/boardImg/write.png" alt="글쓰기"/> <p class="txt">글쓰기</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                    </div>
+                </article>
+            </section>
+        </main>
+<!-- 2/19 최인수 끝 -->
+        <!--개인정보처리방침-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.           
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="inner">
+                <div class="box1">
+                    <img src="./img/common/footer_logo.png" alt="The Robotics" class="logo" />
+                    <div class="siteInfoList">
+                        <a href="#" class="item">공식 홈페이지</a>
+                        <a href="#" class="item privacyPopupBtn">개인정보처리방침</a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <ul class="site_infoList">
+                        <li>대표자 : 강동우</li><li class="bar"></li>
+                        <li>사업자 등록번호 : 837-81-02151</li><li class="bar"></li>
+                        <li>E-mail : contact@therobotics.kr</li>
+                        <li>주소 : 대전광역시 중구 중앙로 119, 802호  </li><li class="bar"></li>
+                        <li>문의 : 010-5153-5761</li>
+                    </ul>
+                    <div class="copy_right">@ artwa.All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

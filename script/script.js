@@ -14,7 +14,33 @@ document.addEventListener("DOMContentLoaded", function(e){
     robotGoArti();
     mainLogoSlide();
     menu1_1_hoverHandler();
+
+    // menu2_1ScrollEvent();
+    menu2VideoPlayer();
+
+    menu2_1_customerSlide();
 })
+
+const menu2_1_customerSlide = () => {
+    var swiper = new Swiper(".sub.menu2_1 .customerSection .slideBox .mySwiper", {
+        loop : true,
+        effect : "fade" ,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".sub.menu2_1 .customerSection .slideBox .nextBtn",
+          prevEl: ".sub.menu2_1 .customerSection .slideBox .prevBtn",
+        },
+      });
+}
+
+const menu2VideoPlayer = () => {
+    $(document).ready(function() {
+        $('[data-vbg]').youtube_background(); // 실행
+    });
+}
 
 const menu1_1_hoverHandler = () => {
     $('.sub.menu1_1 .article05 .circleBox .circle .text').hover(function(){
