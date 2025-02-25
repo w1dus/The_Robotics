@@ -996,6 +996,9 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 .sub.menu2 .peopleSection .topBarTitle::before{display: none;  }
 .sub.menu2 .peopleSection .itemList{ display: flex; margin-top: 40px; }
 .sub.menu2 .peopleSection .itemList > li{ flex-grow: 1; }
+.sub.menu2 .peopleSection .itemList > li:nth-child(1){ width: calc(60% / 2); }
+.sub.menu2 .peopleSection .itemList > li:nth-child(2){ width: calc(60% / 2); }
+.sub.menu2 .peopleSection .itemList > li:nth-child(3){ width: 40%; }
 .sub.menu2 .peopleSection .itemList > li + li{ border-left: 1px solid #fff; }
 .sub.menu2 .peopleSection .itemList > li .item{ text-align: center; padding: 20px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .sub.menu2 .peopleSection .itemList > li .item .icon{ width: 50px; height: 50px; background-size: contain; background-repeat: no-repeat; background-position: center; }
@@ -1243,7 +1246,7 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
     .sub.menu2_4 .viewlabSection .pipe3{ top: 132vw; }
     .sub.menu2 .viewlabSection .itemList { position: relative; z-index: 3; }
     .sub.menu2 .viewlabSection .itemList > li + li{ margin-top: 20px; }
-    .sub.menu2 .viewlabSection .itemList .item{ background: #F0F0F0; }
+    .sub.menu2_4 .viewlabSection .itemList .item{ background: #F0F0F0; }
 }
 
 

@@ -120,12 +120,64 @@
 .sub.menu1_3 .article02.on{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
 
 
+.sub.menu2 .article02 .icon{ opacity: 0; }
+.sub.menu2 .article02.on .icon{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .article02 .blackBg{ opacity: 0; }
+.sub.menu2 .article02.on .blackBg{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+.sub.menu2 .article02 .botbox{ opacity: 0; }
+.sub.menu2 .article02.on .botbox{ animation: fadeIn .7s ease-in-out 0.2s 1 forwards running; }
+.sub.menu2 .article02 .robot{ opacity: 0; }
+.sub.menu2 .article02.on .robot{ animation: fadeIn .7s ease-in-out 0.3s 1 forwards running; }
+.sub.menu2 .section02 .title{ opacity: 0; }
+.sub.menu2 .section02.on .title{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .section03 .whiteBox{ opacity: 0; }
+.sub.menu2 .section03.on .whiteBox{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+
+.sub.menu2 .variousSection .itemList > li{ opacity: 0; }
+.sub.menu2 .variousSection.on .itemList > li:nth-child(1){ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .variousSection.on .itemList > li:nth-child(2){ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+.sub.menu2 .variousSection.on .itemList > li:nth-child(3){ animation: fadeIn .7s ease-in-out 0.2s 1 forwards running; }
+.sub.menu2_1 .rentSection .item{ opacity: 0; }
+.sub.menu2_1 .rentSection.on .item{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+
+.sub.menu2 .customerSection .slideBox{ opacity: 0; }
+.sub.menu2 .customerSection.on .slideBox{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .productSection .tableWrap{ opacity: 0; }
+.sub.menu2 .productSection.on .tableWrap{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .productSection .downloadBoxWrap{ opacity: 0; }
+.sub.menu2 .productSection.on .downloadBoxWrap{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
 
 
+.sub.menu2 .section02 .notice{ opacity: 0; }
+.sub.menu2 .section02.on .notice{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+.sub.menu2_2 .robotSection .itemList{ opacity: 0; }
+.sub.menu2_2 .robotSection.on .itemList{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
 
+.sub.menu2 .viewlabSection .itemList > li{ opacity: 0; }
+.sub.menu2 .viewlabSection .itemList > li.on{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
 
+.sub.menu2 .viewlabSection .itemList .item .robot1{ animation: floating 3s ease-in-out infinite; }
+.sub.menu2 .viewlabSection .itemList .item .robot2{ animation: floating2 3s ease-in-out infinite;  }
 
-
+.sub.menu2_5 .article02 .tobotTitle{ opacity: 0; }
+.sub.menu2_5 .article02 .tobotTitle{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2_5 .article02 .tobotImg{ opacity: 0; }
+.sub.menu2_5 .article02.on .tobotImg{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+.sub.menu2_5 .article02 .tobotImg2{ opacity: 0; }
+.sub.menu2_5 .article02.on .tobotImg2{ animation: fadeIn .7s ease-in-out 0.2s 1 forwards running; }
+.sub.menu2_5 .article02 .tobotBox{ opacity: 0;} 
+.sub.menu2_5 .article02.on .tobotBox{ animation: fadeIn .7s ease-in-out 0.3s 1 forwards running; }
+ 
+@keyframes floating {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-10px) translateX(10px); }
+    100% { transform: translateY(0) translateX(0); }
+}
+@keyframes floating2 {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(10px) translateX(-10px); }
+    100% { transform: translateY(0) translateX(0); }
+}
 
 @keyframes fadeIn {
     0% { opacity: 0; transform: translate3d(0px, 30px, 0px); }
