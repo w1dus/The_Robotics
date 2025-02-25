@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--페럴렉스-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/youtube-background@1.0.14/jquery.youtube-background.min.js"></script>
+    </head>
+    <body>
+        <header class=""><!--메인에만 main active클래스 넣어주세요. -->
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/common/logo.png" alt="The Robotics" class="logo default" />
+                    <img src="./img/common/logo_white.png" alt="The Robotics" class="logo white" />
+                </a>
+                <ul class="menuList">
+                    <li>
+                        <a href="./menu1_1.html">About Us</a>
+                        <ul class="subMenu">
+                            <li><div class="title">About Us</div></li>
+                            <li><a href="./menu1_1.html" class="sub_item">Greeting</a></li>
+                            <li><a href="./menu1_2.html" class="sub_item">History</a></li>
+                            <li><a href="./menu1_3.html" class="sub_item">Location</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./menu2_1.html">Models</a>
+                        <ul class="subMenu">
+                            <li><div class="title">Models</div></li>
+                            <li><a href="./menu2_1.html" class="sub_item">botbox</a></li>
+                            <li><a href="./menu2_2.html" class="sub_item">botbox+</a></li>
+                            <li><a href="./menu2_3.html" class="sub_item">beau;leaf</a></li>
+                            <li><a href="./menu2_4.html" class="sub_item">i-PiE</a></li>
+                            <li><div class="title">Platform</div></li>
+                            <li><a href="./menu2_5.html" class="sub_item">Autonomous Following <br>
+                                & Driving Module</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./menu3_1.html">Blog</a>
+                        <ul class="subMenu">
+                            <li><div class="title">Blog</div></li>
+                            <li><a href="./menu3_2.html" class="sub_item">Customer Stories</a></li>
+                            <li><a href="./menu3_3.html" class="sub_item">News</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./apply.html">Contact Us</a></li>
+                </ul>
+                <ul class="langMenu">
+                    <li class=""><a href="./index.html">KR</a></li>
+                    <li class="active">/</li>
+                    <li class="active"><a href="#">EN</a></li>
+                </ul>
+                <button type="button" class="sideMenuBtn">
+                    <img src="./img/common/side_menu_icon.png" alt="메뉴" class="icon" />
+                </button>
+            </div>
+        </header>
+        <section class="menuCloseBg"></section>
+        <section class="rightSideMenu">
+            <div class="btnWrapDiv">
+                <button type="button" class="closeBtn">
+                    <img src="./img/common/sideMenuCloseBtn.png" alt="X" class="icon" />
+                </button>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">회사소개</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li><a href="./menu1_1.html">인사말</a></li>
+                    <li><a href="./menu1_2.html">연혁</a></li>
+                    <li><a href="./menu1_3.html">오시는길</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">제품</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li class="cetegory2">모델</li>
+                    <li><a href="./menu2_1.html">봇박스</a></li>
+                    <li><a href="./menu2_2.html">봇박스 +</a></li>
+                    <li><a href="./menu2_3.html">뷰립</a></li>
+                    <li><a href="./menu2_4.html">아이파이</a></li>
+                    <li class="cetegory2">모델</li>
+                    <li><a href="./menu2_5.html">추종/자율주행 모듈</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">블로그</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li><a href="./menu3_2.html">고객사례</a></li>
+                    <li><a href="./menu3_2.html">뉴스</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <a href="./apply.html" class="category1Box">
+                    <div class="title">문의</div>
+                </a>
+            </div>
+        </section>
+        <section class="mobileMenuCloseBg"></section>
+
+        <main class="sub sec_top menu2 menu2_3">
+            <section class="section01">
+                <div class="inner">
+                    <section class="subWrapSection">
+                        <article class="article01 ani">
+                            <ul class="siteMapBox">
+                                <li><a href="./index.html"><img src="./img/common/white_home_icon.png" class="icon" alt="홈"/></a></li>
+                                <li class="dot"></li>
+                                <li><a href="./menu2_1.html">Models</a></li>
+                                <li class="dot"></li>
+                                <li class="active"><a href="./menu2_3.html">beau;leaf</a></li>
+                            </ul>
+                            <div class="subBigTitle">beau;leaf</div>
+                        </article>
+                        <article class="article02 ani">
+                            <div class="inner">
+                                <div class="blackBg">Unmanned Water Quality Monitoring Robot, beau;leaf</div>
+                                <img src="./img/sub/menu2_3/section01/text.png" altt="botbox" class="botbox" />
+                                <img src="./img/sub/menu2_3/section01/robot.png" altt="botbox" class="robot" />
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </section>
+            <section class="section02 ani">
+                <div class="inner">
+                    <div class="title">
+                        <b class="blue">Introducing beau;leaf</b>, an unmanned<br/>
+                        water quality monitoring robot.
+                    </div>
+                </div>
+            </section>
+            <section class="section03 ani">
+                <div class="inner">
+                    <div class="whiteBox">
+                        <ul class="itemList">
+                            <li>
+                                <img src="./img/sub/menu2_3/section03/item1.png" alt="특허증" class="item">
+                            </li>
+                            <li>
+                                <img src="./img/sub/menu2_3/section03/item2.png" alt="특허증" class="item">
+                            </li>
+                            <li>
+                                <img src="./img/sub/menu2_3/section03/item3.png" alt="특허증" class="item">
+                            </li>
+                        </ul>
+
+                        <ul class="checkList">
+                            <li>
+                                <div class="item">
+                                    <img src="./img/sub/menu2_3/section03/check_icon.png" alt="V" class="icon">
+                                    <div class="text">In Collaboration with Korea Water Resources Corporation (K-Water)</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="./img/sub/menu2_3/section03/check_icon.png" alt="V" class="icon">
+                                    <div class="text">Patented Unmanned Water Quality Robot & Control System</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="./img/sub/menu2_3/section03/check_icon.png" alt="V" class="icon">
+                                    <div class="text">Patented Autonomous Charging System</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="./img/sub/menu2_3/section03/check_icon.png" alt="V" class="icon">
+                                    <div class="text">Patent Pending for Amphibious Water Surveillance Robot</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="videoSection ani" >
+                <article class="videoBg" data-vbg-autoplay="true" data-vbg="https://youtu.be/v1v93ncpQKM?si=TTzpL1lYR0qLjpK5"></article>
+            </section>
+            <section class="viewlabSection ani">
+                <div class="inner">
+                    <ul class="itemList">
+                        <li class="ani">
+                            <div class="item">
+                                <img src="./img/sub/menu2_3/viewlabSection/robot1.png" alt="뷰랩" class="robot robot1" />
+                                <div class="number">01</div>
+                                <div class="t1">Amphibious Robot</div>
+                                <div class="t2">
+                                    Operates on both land and water.<br/>
+                                    Supports autonomous charging outside the water.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ani">
+                            <div class="item">
+                                <img src="./img/sub/menu2_3/viewlabSection/robot2.png" alt="뷰랩" class="robot robot2" />
+                                <div class="number">02</div>
+                                <div class="t1">Water Quality Data Collection</div>
+                                <div class="t2">
+                                    Equipped with sensors to measure temperature,  <br/>
+                                    pH, turbidity, chlorophyll-a, and more.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ani">
+                            <div class="item">
+                                <img src="./img/sub/menu2_3/viewlabSection/robot3.png" alt="뷰랩" class="robot robot1" />
+                                <div class="number">03</div>
+                                <div class="t1">Monitoring System</div>
+                                <div class="t2">
+                                    Transmits data via LoRa and LTE to a web-based system.<br/>
+                                    Analyzes collected data to assess water quality risk levels.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="variousSection ani">
+                <div class="inner">
+                    <div class="topBarTitle">
+                        BeauLeaf’s Customization Options
+                    </div>
+                    <div class="content">The top structure can serve as lighting, a corporate mascot, or an advertisement display. </div>
+                    <ul class="itemList">
+                        <li>
+                            <div class="item img1">
+                                <div class="t1">beau;leaf_Object</div>
+                                <div class="btnWrap">
+                                    <button type="button" class="plusBtn">
+                                        <img src="./img/sub/menu2_3/variousSection/plus_icon.png" alt="+" class="icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item img2">
+                                <div class="t1">beau;leaf_Cargo</div>
+                                <div class="btnWrap">
+                                    <button type="button" class="plusBtn">
+                                        <img src="./img/sub/menu2_3/variousSection/plus_icon.png" alt="+" class="icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item img3">
+                                <div class="t1">beau;leaf_Water Quality Sensor</div>
+                                <div class="btnWrap">
+                                    <button type="button" class="plusBtn">
+                                        <img src="./img/sub/menu2_3/variousSection/plus_icon.png" alt="+" class="icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="peopleSection ani">
+                <div class="inner">
+                    <div class="topBarTitle">
+                        beau;leaf is already working<br>
+                        alongside people
+                    </div>
+                    <ul class="itemList">
+                        <li>
+                            <div class="item">
+                                <div class="icon icon1"></div>
+                                <div class="text1">Total Work Time Replaced by BotBox</div>
+                                <div class="countDiv">
+                                    <div class="count">630</div> <div class="text">hours</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon icon2"></div>
+                                <div class="text1">Total Transport Capacity</div>
+                                <div class="countDiv">
+                                    <div class="count">26</div> <div class="text">t</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon icon3"></div>
+                                <div class="text1">Labor Cost Savings</div>
+                                <div class="countDiv">
+                                    <div class="count">13,3650,000</div> <div class="text">KRW</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="customerSection ani">
+                <div class="inner">
+                    <div class="topBarTitle">
+                        beau;leaf in Action
+                    </div>
+                    <div class="content">Various real-world applications of beau;leaf</div>
+
+                    <div class="slideBox">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgBox img1"></div>
+                                        <div class="contentBox">
+                                            <div class="nameBox">Function 1</div>
+                                            <div class="t1">Oil Fence Deployment </div>
+                                            <div class="t2">
+                                                Deploys an oil fence barrier to contain  <br/>
+                                                oil spills and minimize environmental damage.
+                                            </div>
+                                            <div class="btnWrap">
+                                                <button type="button" class="prevBtn pnBtn">
+                                                    <img src="./img/sub/menu2_3/customerSection/prevBtn.png" alt="<" class="icon" />
+                                                </button>
+                                                <button type="button" class="nextBtn pnBtn">
+                                                    <img src="./img/sub/menu2_3/customerSection/nextBtn.png" alt=">" class="icon" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgBox img2"></div>
+                                        <div class="contentBox">
+                                            <div class="nameBox">Function 2</div>
+                                            <div class="t1">Water Quality Monitoring System</div>
+                                            <div class="t2">
+                                                Transmits collected water quality data in real-time.<br/>
+                                                Integrated into ETRI and K-Water’s environmental <br/>
+                                                database system.
+                                            </div>
+                                            <div class="btnWrap">
+                                                <button type="button" class="prevBtn pnBtn">
+                                                    <img src="./img/sub/menu2_3/customerSection/prevBtn.png" alt="<" class="icon" />
+                                                </button>
+                                                <button type="button" class="nextBtn pnBtn">
+                                                    <img src="./img/sub/menu2_3/customerSection/nextBtn.png" alt=">" class="icon" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgBox img3"></div>
+                                        <div class="contentBox">
+                                            <div class="nameBox">Function 3</div>
+                                            <div class="t1">River & Ocean Water Quality Testing</div>
+                                            <div class="t2">
+                                                Conducts real-time water quality testing without <br/>
+                                                human intervention.Provides immediate alerts <br/>
+                                                for pollution or contamination.
+                                            </div>
+                                            <div class="btnWrap">
+                                                <button type="button" class="prevBtn pnBtn">
+                                                    <img src="./img/sub/menu2_3/customerSection/prevBtn.png" alt="<" class="icon" />
+                                                </button>
+                                                <button type="button" class="nextBtn pnBtn">
+                                                    <img src="./img/sub/menu2_3/customerSection/nextBtn.png" alt=">" class="icon" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgBox img3"></div>
+                                        <div class="contentBox">
+                                            <div class="nameBox">Function 4</div>
+                                            <div class="t1">Nighttime Decorative Lighting </div>
+                                            <div class="t2">
+                                                Serves as a corporate mascot display and ambient  <br/>
+                                                lighting, adding an entertainment element.
+                                            </div>
+                                            <div class="btnWrap">
+                                                <button type="button" class="prevBtn pnBtn">
+                                                    <img src="./img/sub/menu2_3/customerSection/prevBtn.png" alt="<" class="icon" />
+                                                </button>
+                                                <button type="button" class="nextBtn pnBtn">
+                                                    <img src="./img/sub/menu2_3/customerSection/nextBtn.png" alt=">" class="icon" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="productSection ani">
+                <div class="inner">
+                    <div class="topBarTitle">
+                        Product Specifications
+                    </div>
+                    <ul class="tableWrap">
+                        <li>
+                            <div class="box box1"><b>Model</b></div>
+                            <div class="box box2">beau;leaf</div>
+                        </li>
+                        <li>
+                            <div class="box box1"><b>Size</b></div>
+                            <div class="box box2">1200*1000*800 mm   </div>
+                            <div class="box box1"><b>Weight</b></div>
+                            <div class="box box2">80 kg</div>
+                        </li>
+                        <li>
+                            <div class="box box1"><b>Sensors</b></div>
+                            <div class="box box2">Chlorophyll-a, pH, temperature, dissolved oxygen (DO), turbidity</div>
+                        </li>
+                        <li>
+                            <div class="box box1"><b>LED</b></div>
+                            <div class="box box2">60W 20 LED</div>
+                        </li>
+                        <li>
+                            <div class="box box1"><b>Battery</b></div>
+                            <div class="box box2">LI-ION  7S4P / 25.2V / 60Ah</div>
+                        </li>
+                        <li>
+                            <div class="box box1"><b>Charging</b></div>
+                            <div class="box box2">1h</div>
+                            <div class="box box1"><b>Usage Time</b></div>
+                            <div class="box box2">2h</div>
+                        </li>
+                    </ul>
+                    <div class="downloadBoxWrap">
+                        <a href="#" download="" class="downloadBtn">
+                            Download Brochure
+                            <img src="./img/sub/menu2_1/productSection/download_icon.png" alt="다운로드" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--개인정보처리방침-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.           
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="inner">
+                <div class="box1">
+                    <img src="./img/common/footer_logo.png" alt="The Robotics" class="logo" />
+                    <div class="siteInfoList">
+                        <a href="#" class="item">Official Website</a>
+                        <a href="#" class="item privacyPopupBtn">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <ul class="site_infoList">
+                        <li>CEO: Dongwoo Kang </li><li class="bar"></li>
+                        <li>Business Registration Number: 837-81-02151</li><li class="bar"></li>
+                        <li>Email: contact@therobotics.kr</li>
+                        <li>Address: #802, 119 Jungang-ro, Jung-gu, Daejeon, South Korea  </li><li class="bar"></li>
+                        <li>Phone: +82-10-5153-5761</li>
+                    </ul>
+                    <div class="copy_right">@ artwa.All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

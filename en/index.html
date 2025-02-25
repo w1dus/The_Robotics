@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--페럴렉스-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+        <header class=""><!--메인에만 main active클래스 넣어주세요. -->
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/common/logo.png" alt="The Robotics" class="logo default" />
+                    <img src="./img/common/logo_white.png" alt="The Robotics" class="logo white" />
+                </a>
+                <ul class="menuList">
+                    <li>
+                        <a href="./menu1_1.html">About Us</a>
+                        <ul class="subMenu">
+                            <li><div class="title">About Us</div></li>
+                            <li><a href="./menu1_1.html" class="sub_item">Greeting</a></li>
+                            <li><a href="./menu1_2.html" class="sub_item">History</a></li>
+                            <li><a href="./menu1_3.html" class="sub_item">Location</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./menu2_1.html">Models</a>
+                        <ul class="subMenu">
+                            <li><div class="title">Models</div></li>
+                            <li><a href="./menu2_1.html" class="sub_item">botbox</a></li>
+                            <li><a href="./menu2_2.html" class="sub_item">botbox+</a></li>
+                            <li><a href="./menu2_3.html" class="sub_item">beau;leaf</a></li>
+                            <li><a href="./menu2_4.html" class="sub_item">i-PiE</a></li>
+                            <li><div class="title">Platform</div></li>
+                            <li><a href="./menu2_5.html" class="sub_item">Autonomous Following <br>
+                                & Driving Module</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./menu3_1.html">Blog</a>
+                        <ul class="subMenu">
+                            <li><div class="title">Blog</div></li>
+                            <li><a href="./menu3_2.html" class="sub_item">Customer Stories</a></li>
+                            <li><a href="./menu3_3.html" class="sub_item">News</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./apply.html">Contact Us</a></li>
+                </ul>
+                <ul class="langMenu">
+                    <li class=""><a href="./index.html">KR</a></li>
+                    <li class="active">/</li>
+                    <li class="active"><a href="#">EN</a></li>
+                </ul>
+                <button type="button" class="sideMenuBtn">
+                    <img src="./img/common/side_menu_icon.png" alt="메뉴" class="icon" />
+                </button>
+            </div>
+        </header>
+        <section class="menuCloseBg"></section>
+        <section class="rightSideMenu">
+            <div class="btnWrapDiv">
+                <button type="button" class="closeBtn">
+                    <img src="./img/common/sideMenuCloseBtn.png" alt="X" class="icon" />
+                </button>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">About Us</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li><a href="./menu1_1.html">Greeting</a></li>
+                    <li><a href="./menu1_2.html">History</a></li>
+                    <li><a href="./menu1_3.html">Location</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">Models</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li class="cetegory2">Models</li>
+                    <li><a href="./menu2_1.html">botbox</a></li>
+                    <li><a href="./menu2_2.html">botbox+</a></li>
+                    <li><a href="./menu2_3.html">beau;leaf</a></li>
+                    <li><a href="./menu2_4.html">i-PiE</a></li>
+                    <li class="cetegory2">Platform</li>
+                    <li><a href="./menu2_5.html">Autonomous Following & Driving Module</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <button type="button" class="category1Box subMenuBtn">
+                    <div class="title">Blog</div>
+                    <img src="./img/common/menuArrow.png" alt="메뉴" class="arrow" />
+                </button>
+                <ul class="subMenuList">
+                    <li><a href="./menu3_1.html">Customer Stories</a></li>
+                    <li><a href="./menu3_2.html">News</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <a href="./apply.html" class="category1Box">
+                    <div class="title">Contact Us</div>
+                </a>
+            </div>
+        </section>
+        <section class="mobileMenuCloseBg"></section>
+
+        <main class="main">
+            <article class="mainBannerArti ani">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="backgroundDiv">
+                                <div class="pcImg bg" style="background-image: url('./img/main/mainBannerArti/background1.png');"></div>
+                                <div class="moImg bg" style="background-image: url('./img/main/mainBannerArti/mobile_background.png');"></div>
+                            </div>
+                            <div class="inner">
+                                <div class="contentDiv">
+                                    <!-- <div class="title1">친안전 친환경 로봇 플랫폼</div> -->
+                                    <div class="title2">
+                                        <img src="./img/main/mainBannerArti/logo.png" alt="THE Robotics" class="logo" />
+                                    </div>
+                                    <div class="content">
+                                        We harness robotics to create a safer environment and a sustainable future <br>
+                                        allowing people to live as they should. <br><br>
+                                        Through collaborative robots, we strive to build a world where people and nature coexist.
+                                    </div>
+                                    <div class="btnWrap">
+                                        <a href="#" class="moreBtn">
+                                            View more <img src="./img/main/mainBannerArti/right_arrow.png" alt="->" class="arrow" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="backgroundDiv">
+                                <div class="pcImg bg" style="background-image: url('./img/main/mainBannerArti/background1.png');"></div>
+                                <div class="moImg bg" style="background-image: url('./img/main/mainBannerArti/mobile_background.png');"></div>
+                            </div>
+                            <div class="inner">
+                                <div class="contentDiv">
+                                    <!-- <div class="title1">친안전 친환경 로봇 플랫폼</div> -->
+                                    <div class="title2"> <img src="./img/main/mainBannerArti/logo.png" alt="THE Robotics" class="logo" /></div>
+                                    <div class="content">
+                                        We harness robotics to create a safer environment and a sustainable future <br>
+                                        allowing people to live as they should. <br><br>
+                                        Through collaborative robots, we strive to build a world where people and nature coexist.
+                                    </div>
+                                    <div class="btnWrap">
+                                        <a href="#" class="moreBtn">
+                                            View more <img src="./img/main/mainBannerArti/right_arrow.png" alt="->" class="arrow" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </article>
+            <article class="solutionArti ani">
+                <div class="title">
+                    <div class="inner">
+                        Providing Just the <br/>Right Solutions
+                    </div>  
+                </div>
+                
+                <div class="leftText">
+                    We innovate in robot <b>T</b>echnology<br/>
+                    for <b>H</b>uman and <b>E</b>nvironment 
+                </div>
+                <div class="inner">
+                    <div class="rightBox">
+                        <div class="text">
+                            Solving real-world challenges<br/>
+                            Providing innovative, scalable solutions<br/>
+                            Pioneering the future, one step at a time.
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="counterArti ani">
+                <div class="inner">
+                    <div class="mainTitle">
+                        THE Robotics' robots<br/>
+                        already working alongside people.
+                    </div>
+                    <ul class="itemList">
+                        <li>
+                            <div class="item">
+                                <div class="iconBox icon1"></div>
+                                <div class="title">Work Hours Replaced</div>
+                                <div class="counterDiv">
+                                    <div class="count">630</div>hours
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="iconBox icon2"></div>
+                                <div class="title">Robots Produced</div>
+                                <div class="counterDiv">
+                                    <div class="count">1,300</div>million units
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="iconBox icon3"></div>
+                                <div class="title">Labor Cost Savings</div>
+                                <div class="counterDiv">
+                                    <div class="count">13,3650,000</div>KRW
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="robotArti ani">
+                <div class="inner">
+                    <div class="circleBar"></div>
+                    <div class="slideBox">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                        <div class="item">
+                                            <div class="robotBox robot1"></div>
+                                            <div class="title">Autonomous Following  <br/>& Navigation Robot</div>
+                                            <div class="textBox">
+                                                Equipped with obstacle avoidance <br/>
+                                                and autonomous driving algorithms <br/>
+                                                for outdoor environments
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="robotBox robot2"></div>
+                                        <div class="title">Dump/Lift Autonomous <br/>Following Robot</div>
+                                        <div class="textBox">
+                                            Enhanced with dump and lift <br/>
+                                            functions in addition to <br/>
+                                            autonomous following technology
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="robotBox robot3"></div>
+                                        <div class="title">Water Quality Monitoring /<br/>Pipeline Inspection Robot</div>
+                                        <div class="textBox">
+                                            Conducts remote water quality <br/>
+                                            analysisand real-time data <br/>
+                                            transmission on water surfaces
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="robotBox robot4"></div>
+                                        <div class="title">Autonomous <br/>Following Module</div>
+                                        <div class="textBox">
+                                            A modular solution compatible with <br/>
+                                            various machines,enabling <br/>
+                                            autonomous navigation and following
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="rogotList">
+                        <li>
+                            <div class="item">
+                                <img src="./img/main/robotArti/item1_active.png" alt="자율 추종 주행 로봇" class="robot robot1" />
+                                <div class="textBox">
+                                    Equipped with obstacle avoidance
+                                    and autonomous driving algorithms
+                                    for outdoor environments
+                                </div>
+                                <div class="circle">
+                                    <div class="small_circle"></div>
+                                </div>
+                                <div class="name">
+                                    Autonomous Following <br/>
+                                    & Navigation Robot
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="./img/main/robotArti/item2_active.png" alt="덤프/리프트 추종 주행 로봇" class="robot robot2" />
+                                <div class="textBox">
+                                    Enhanced with dump and lift 
+                                    functions in addition to 
+                                    autonomous following technology
+                                </div>
+                                <div class="circle">
+                                    <div class="small_circle"></div>
+                                </div>
+                                <div class="name">
+                                    Dump/Lift Autonomous <br/>
+                                    Following Robot
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="./img/main/robotArti/item3_active.png" alt="수질 측정 / 배관 탐사 로봇" class="robot robot3" />
+                                <div class="textBox">
+                                    Conducts remote water quality 
+                                    analysisand real-time data 
+                                    transmission on water surfaces
+                                </div>
+                                <div class="circle">
+                                    <div class="small_circle"></div>
+                                </div>
+                                <div class="name">
+                                    Water Quality Monitoring / <br/>
+                                    Pipeline Inspection Robot
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="./img/main/robotArti/item4_active.png" alt="수질 측정 / 배관 탐사 로봇" class="robot robot4" />
+                                <div class="textBox">
+                                    A modular solution compatible with 
+                                    various machines,enabling 
+                                    autonomous navigation and following
+                                </div>
+                                <div class="circle">
+                                    <div class="small_circle"></div>
+                                </div>
+                                <div class="name">
+                                    Autonomous<br/>
+                                    Following Module
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="robotGoArti ani">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item item1">
+                                <div class="bgBox">
+                                    <img src="./img/main/robotGoArti/bg1_1.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg1.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg1_1.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg1.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg1_1.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg1.png" alt="배경" class="bg"/>
+                                </div>
+                                <div class="inner">
+                                    <div class="halfBox">
+                                        <div class="text">In warehouses where <br/>heavy loads need<br/>to be moved, </div>
+                                        <div class="robotWrap">
+                                            <img src="./img/main/robotGoArti/robot1.png" alt="로봇" class="robot robot1" />
+                                            <img src="./img/main/robotGoArti/robot1.png" alt="로봇" class="robot robot2" />
+                                            <img src="./img/main/robotGoArti/robot1.png" alt="로봇" class="robot robot3" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item item2">
+                                <img src="./img/main/robotGoArti/top_robot.png" alt="상단고정 로봇" class="bgRobot"/>
+                                <div class="bgBox">
+                                    <img src="./img/main/robotGoArti/bg2_1.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg2.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg2_1.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg2.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg2_1.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg2.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg2_1.png" alt="배경" class="bg"/>
+                                </div>
+                                <div class="inner">
+                                    <div class="halfBox">
+                                        <div class="text">Fast and accurate <br/>work required<br/>on the road</div>
+                                        <div class="robotWrap">
+                                            <img src="./img/main/robotGoArti/robot2.png" alt="로봇" class="robot robot1" />
+                                            <img src="./img/main/robotGoArti/yelloBar.png" alt="노란색" class="yello" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item item3">
+                                <div class="bgBox">
+                                    <img src="./img/main/robotGoArti/bg3.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg3.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg3.png" alt="배경" class="bg"/>
+                                    <img src="./img/main/robotGoArti/bg3.png" alt="배경" class="bg"/>
+                                </div>
+                                <div class="inner">
+                                    <div class="halfBox">
+                                        <div class="text">In specific environments  <br/>where it is difficult for <br/>people to work</div>
+                                        <div class="robotWrap">
+                                            <img src="./img/main/robotGoArti/robot3.png" alt="로봇" class="robot robot1" />
+                                            <img src="./img/main/robotGoArti/worring.png" alt="지뢰" class="worring worring1" />
+                                            <img src="./img/main/robotGoArti/worring2.png" alt="지뢰" class="worring worring2" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </article>
+            <article class="technologyArti ani">
+                <img src="./img/main/technologyArti/bgText.png" alt="The Robotics" class="text text1" />
+                <img src="./img/main/technologyArti/bgText.png" alt="The Robotics" class="text text2" />
+                <div class="inner">
+                    <div class="mainTitle">
+                        Cutting-edge technology,  <br/>
+                        made affordable and ready to use today.
+                    </div>
+                    <ul class="titleList">
+                        <li>
+                            <div class="item">
+                                <div class="imgBox bg1"></div>
+                                <div class="category">
+                                    <div class="label">Hardware</div>
+                                </div>
+                                <div class="content">
+                                    Robots designed for operation in diverse environments,<br/>
+                                    including land, water, and rough terrains, delivering practical <br/>
+                                    solutions across industries.        
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="imgBox bg2"></div>
+                                <div class="category">
+                                    <div class="label">Algorithms</div>
+                                </div>
+                                <div class="content">
+                                    Optimized autonomous navigation and following algorithms <br/>
+                                    ensure a safer and more efficient work environment.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="newsArti ani">
+                <div class="inner">
+                    <div class="halfBox">
+                        <div class="leftBox">
+                            <div class="mainTitle">
+                                Latest News from<br/>
+                                THE Robotics
+                            </div>
+                            <a href="./menu3_3.html" class="moreViewBtn">
+                                <div class="text">More View</div>
+                                <img src="./img/main/newsArti/moreViewIcon.png" alt="더보기" class="icon" />
+                            </a>
+                        </div>
+                        <div class="rightBox">
+                            <ul class="itemList">
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="titleBox">
+                                                <div class="title">[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features</div>
+                                                <img src="./img/main/newsArti/right_arrow.png" alt="_>" class="icon" />
+                                            </div>
+                                            <div class="date">2025.01.01</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="titleBox">
+                                                <div class="title">[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features</div>
+                                                <img src="./img/main/newsArti/right_arrow.png" alt="_>" class="icon" />
+                                            </div>
+                                            <div class="date">2025.01.01</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="titleBox">
+                                                <div class="title">[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features</div>
+                                                <img src="./img/main/newsArti/right_arrow.png" alt="_>" class="icon" />
+                                            </div>
+                                            <div class="date">2025.01.01</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="titleBox">
+                                                <div class="title">[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features[Korea Economic Daily] THE Robotics Introduces Next-Gen Features</div>
+                                                <img src="./img/main/newsArti/right_arrow.png" alt="_>" class="icon" />
+                                            </div>
+                                            <div class="date">2025.01.01</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="logoArti ani">
+                <div class="logoBox box1">
+                    <div class="inner">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box1/logo1.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box1/logo2.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box1/logo3.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box1/logo4.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box1/logo5.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box1/logo6.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box1/logo7.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box1/logo8.png" alt="" class="logo"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logoBox box2">
+                    <div class="inner">
+                        <div class="swiper mySwiper" dir="rtl" >
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box2/logo1.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box2/logo2.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box2/logo3.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box2/logo4.png" alt="" class="logo"/></div>
+                                <div class="swiper-slide"><img src="./img/main/logoArti/box2/logo5.png" alt="" class="logo"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="commonApplyArti ani">
+                <div class="inner">
+                    <div class="mainTitle">
+                        Have questions? <br/>
+                        We're here to help!
+                    </div>
+                    <a href="./apply.html" class="applyBtn">
+                        <div class="text">Contact Us</div>
+                        <img src="./img/main/commonApplyArti/right_arrow.png" alt="->" class="icon" />
+                    </a>
+                </div>
+            </article>
+        </main>
+
+        <!--개인정보처리방침-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>Privacy Policy</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        Enter the Privacy Policy that matches this website           
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="inner">
+                <div class="box1">
+                    <img src="./img/common/footer_logo.png" alt="The Robotics" class="logo" />
+                    <div class="siteInfoList">
+                        <a href="#" class="item">Official Website</a>
+                        <a href="#" class="item privacyPopupBtn">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <ul class="site_infoList">
+                        <li>CEO: Dongwoo Kang </li><li class="bar"></li>
+                        <li>Business Registration Number: 837-81-02151</li><li class="bar"></li>
+                        <li>Email: contact@therobotics.kr</li>
+                        <li>Address: #802, 119 Jungang-ro, Jung-gu, Daejeon, South Korea  </li><li class="bar"></li>
+                        <li>Phone: +82-10-5153-5761</li>
+                    </ul>
+                    <div class="copy_right">@ artwa.All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

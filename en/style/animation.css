@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/* animation: fadeIn 0.7s ease-in-out 0s 1 forwards running; */
+
+.main .robotGoArti .item.item1 .bgBox .bg , 
+.main .robotGoArti .item.item2 .bgBox .bg{ animation: marquee4 infinite 30s linear; }
+@keyframes marquee4{
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+.main .robotGoArti .swiper-slide-active .item.item1 .halfBox .robotWrap .robot1{ transform: translateX(40%); animation: item1Move 4s ease-in-out 0s 1 forwards running; }
+.main .robotGoArti .swiper-slide-active .item.item1 .halfBox .robotWrap .robot2{ opacity: 0; animation: item1Opacity2 ease-in-out 4s infinite; }
+.main .robotGoArti .swiper-slide-active .item.item1 .halfBox .robotWrap .robot3{ opacity: 0; animation: item1Opacity ease-in-out 4s infinite; }
+
+@keyframes item1Move{
+    20% { transform: translateX(20%); }
+    40% { transform: translateX(0); }
+    50%{ transform: translateX(0); }
+    100%{ transform: translateX(0); }
+    /* 100% { transform: translateX(40%); } */
+}
+@keyframes item1Opacity{
+    0% { opacity: 0; }
+    20% { opacity: .2; }
+    40% { opacity: .2; }
+    50%{ opacity: .2; }
+    60%{ opacity: .2; }
+    100% { opacity: 0; }
+}
+@keyframes item1Opacity2{
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    40% { opacity: .2; }
+    50%{ opacity: .2; }
+    60%{ opacity: .2; }
+    100% { opacity: 0; }
+}
+
+.main .robotGoArti .item.item2 .yello{ animation: item2Width linear 4s infinite; }
+@keyframes item2Width{  0% { width: 0; height: 12%; }  100% { width: 100%; height: 12%; } }
+
+.main .robotGoArti .item.item2 .bgRobot{ animation: item2Robot2 4s linear infinite; }
+@keyframes item2Robot2{
+    0% { transform: translateX( 20%); } 20% { transform: translateX(0%); } 40%{ transform: translateX(0%);  } 100%{  transform: translateX(20%); }
+}
+.main .robotGoArti .item.item3 .halfBox .robotWrap .robot1{ animation: item2Robot4 linear 8s infinite; }
+@keyframes item2Robot4{
+    0%{ transform: translateX(0) translateY(0); }
+    20%{ transform: translateX(5%) translateY(5%); }
+    40%{ transform: translateX(-2.5%) translateY(-2.5%); }
+    60%{ transform: translateX(5%) translateY(-2.5%); }
+    100%{  transform: translateX(0) translateY(0); }
+}
+
+/* .sub.menu1_1 */
+.sub.menu1_1 .article06 .textWrap .background{ display: block; animation: bgRotate linear 5s infinite both; }
+@keyframes bgRotate{
+    0%{ transform: rotate(0deg); }
+    100%{  transform: rotate(2deg) scale(1.1); }
+}
+
+
+.main .solutionArti .title{ opacity: 0; }
+.main .solutionArti.on .title{ animation: fadeInLeft 0.7s ease-in-out 0s 1 forwards running; }
+.main .solutionArti .leftText{ opacity: 0; }
+.main .solutionArti.on .leftText{ animation: fadeInLeft 0.7s ease-in-out 0.2s 1 forwards running; }
+.main .solutionArti .rightBox{ opacity: 0; }
+.main .solutionArti.on .rightBox{ animation: fadeInRight 0.7s ease-in-out 0.3s 1 forwards running; }}
+
+.main .counterArti .mainTitle{ opacity: 0; }
+.main .counterArti.on .mainTitle{ animation: fadeIn 0.7s ease-in-out 0s 1 forwards running; }
+
+.main .technologyArti .mainTitle{ opacity: 0; }
+.main .technologyArti.on .mainTitle{ animation: fadeIn 0.7s ease-in-out 0s 1 forwards running; }
+.main .technologyArti .titleList{ opacity: 0; }
+.main .technologyArti.on .titleList{ animation: fadeIn 0.7s ease-in-out 0.1s 1 forwards running; }
+
+.main .newsArti .halfBox .leftBox{ opacity: 0; }
+.main .newsArti.on .halfBox .leftBox{ animation: fadeIn 0.7s ease-in-out 0s 1 forwards running; }
+.main .newsArti .halfBox .rightBox{ opacity: 0; }
+.main .newsArti.on .halfBox .rightBox{ animation: fadeIn 0.7s ease-in-out 0s 1 forwards running; }
+
+
+.sub.menu1_1 .article02 .textBox{ opacity: 0; }
+.sub.menu1_1 .article02.on .textBox{ animation: fadeIn 0.7s ease-in-out 0s 1 forwards running; }
+
+.sub.menu1_1 .article04 .topBarTitle{ opacity: 0; }
+.sub.menu1_1 .article04.on .topBarTitle{ animation: fadeIn 0.7s ease-in-out 0s 1 forwards running; }
+.sub.menu1_1 .article04 .halfBox{ opacity: 0; }
+.sub.menu1_1 .article04.on .halfBox{ animation: fadeIn 0.7s ease-in-out 0.1s 1 forwards running; }
+
+.sub.menu1_1 .article05 .topBarTitle{ opacity: 0; }
+.sub.menu1_1 .article05.on .topBarTitle{ animation: fadeIn 0.7s ease-in-out 0s 1 forwards running; }
+.sub.menu1_1 .article05 .circleBox{ opacity: 0; }
+.sub.menu1_1 .article05.on .circleBox{ animation: fadeIn 0.7s ease-in-out 0.1s 1 forwards running; }
+
+.sub.menu1_1 .article06 .text{ opacity: 0; }
+.sub.menu1_1 .article06.on .text.text1{ animation: fadeInLeft 1.4s ease-in-out 0s 1 forwards running; }
+.sub.menu1_1 .article06.on .text.text2{ animation: fadeInRight 1.4s ease-in-out 0s 1 forwards running; }
+/* .sub.menu1_1 .article06 .textWrap{ opacity: 0; }
+.sub.menu1_1 .article06.on .textWrap{ animation: smallToBig .4s ease-in-out 0s 1 forwards running; } */
+
+
+.sub.menu1_2 .article02 .text{ opacity: 0; }
+.sub.menu1_2 .article02.on .text{ animation: smallToBig 1s ease-in-out 0s 1 forwards running; }
+
+
+.sub.menu1_2 .article03 .topBarTitle{ opacity: 0; }
+.sub.menu1_2 .article03.on .topBarTitle{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu1_2 .article03 .contentBox .yearList > li{ opacity: 0; }
+.sub.menu1_2 .article03 .contentBox .yearList > li.on{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+
+.sub.menu1_2 .article04 .topBarTitle{ opacity: 0; }
+.sub.menu1_2 .article04.on .topBarTitle{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu1_2 .article04 .itemList{ opacity: 0; }
+.sub.menu1_2 .article04.on .itemList{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+
+.sub.menu1_3 .article02{ opacity: 0; }
+.sub.menu1_3 .article02.on{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+
+
+.sub.menu2 .article02 .icon{ opacity: 0; }
+.sub.menu2 .article02.on .icon{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .article02 .blackBg{ opacity: 0; }
+.sub.menu2 .article02.on .blackBg{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+.sub.menu2 .article02 .botbox{ opacity: 0; }
+.sub.menu2 .article02.on .botbox{ animation: fadeIn .7s ease-in-out 0.2s 1 forwards running; }
+.sub.menu2 .article02 .robot{ opacity: 0; }
+.sub.menu2 .article02.on .robot{ animation: fadeIn .7s ease-in-out 0.3s 1 forwards running; }
+.sub.menu2 .section02 .title{ opacity: 0; }
+.sub.menu2 .section02.on .title{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .section03 .whiteBox{ opacity: 0; }
+.sub.menu2 .section03.on .whiteBox{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+
+.sub.menu2 .variousSection .itemList > li{ opacity: 0; }
+.sub.menu2 .variousSection.on .itemList > li:nth-child(1){ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .variousSection.on .itemList > li:nth-child(2){ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+.sub.menu2 .variousSection.on .itemList > li:nth-child(3){ animation: fadeIn .7s ease-in-out 0.2s 1 forwards running; }
+.sub.menu2_1 .rentSection .item{ opacity: 0; }
+.sub.menu2_1 .rentSection.on .item{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+
+.sub.menu2 .customerSection .slideBox{ opacity: 0; }
+.sub.menu2 .customerSection.on .slideBox{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .productSection .tableWrap{ opacity: 0; }
+.sub.menu2 .productSection.on .tableWrap{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2 .productSection .downloadBoxWrap{ opacity: 0; }
+.sub.menu2 .productSection.on .downloadBoxWrap{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+
+
+.sub.menu2 .section02 .notice{ opacity: 0; }
+.sub.menu2 .section02.on .notice{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+.sub.menu2_2 .robotSection .itemList{ opacity: 0; }
+.sub.menu2_2 .robotSection.on .itemList{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+
+.sub.menu2 .viewlabSection .itemList > li{ opacity: 0; }
+.sub.menu2 .viewlabSection .itemList > li.on{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+
+.sub.menu2 .viewlabSection .itemList .item .robot1{ animation: floating 3s ease-in-out infinite; }
+.sub.menu2 .viewlabSection .itemList .item .robot2{ animation: floating2 3s ease-in-out infinite;  }
+
+.sub.menu2_5 .article02 .tobotTitle{ opacity: 0; }
+.sub.menu2_5 .article02 .tobotTitle{ animation: fadeIn .7s ease-in-out 0s 1 forwards running; }
+.sub.menu2_5 .article02 .tobotImg{ opacity: 0; }
+.sub.menu2_5 .article02.on .tobotImg{ animation: fadeIn .7s ease-in-out 0.1s 1 forwards running; }
+.sub.menu2_5 .article02 .tobotImg2{ opacity: 0; }
+.sub.menu2_5 .article02.on .tobotImg2{ animation: fadeIn .7s ease-in-out 0.2s 1 forwards running; }
+.sub.menu2_5 .article02 .tobotBox{ opacity: 0;} 
+.sub.menu2_5 .article02.on .tobotBox{ animation: fadeIn .7s ease-in-out 0.3s 1 forwards running; }
+ 
+@keyframes floating {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-10px) translateX(10px); }
+    100% { transform: translateY(0) translateX(0); }
+}
+@keyframes floating2 {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(10px) translateX(-10px); }
+    100% { transform: translateY(0) translateX(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translate3d(0px, 30px, 0px); }
+    /* 50% { opacity: .6; } */
+    100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translate3d(30px, 0, 0px); }
+    100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
+@keyframes fadeInLeft {
+    0% { opacity: 0; transform: translate3d(-30px, 0, 0px); }
+    100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
+@keyframes smallToBig {
+    0% { transform: scale(.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+@keyframes floatingAni{
+    0%{transform:translate(0,0);}
+    100%{transform:translate(0,10px);}
+}  
+@keyframes floatingAni2{
+    0%{transform:translate(0,0);}
+    100%{transform:translate(0,5px);}
+}  

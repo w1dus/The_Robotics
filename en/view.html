@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class=""><!--메인에만 main active클래스 넣어주세요. -->
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/common/logo.png" alt="The Robotics" class="logo default" />
+                    <img src="./img/common/logo_white.png" alt="The Robotics" class="logo white" />
+                </a>
+                <ul class="menuList">
+                    <li>
+                        <a href="./menu1_1.html">About Us</a>
+                        <ul class="subMenu">
+                            <li><div class="title">About Us</div></li>
+                            <li><a href="./menu1_1.html" class="sub_item">Greeting</a></li>
+                            <li><a href="./menu1_2.html" class="sub_item">History</a></li>
+                            <li><a href="./menu1_3.html" class="sub_item">Location</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./menu2_1.html">Models</a>
+                        <ul class="subMenu">
+                            <li><div class="title">Models</div></li>
+                            <li><a href="./menu2_1.html" class="sub_item">botbox</a></li>
+                            <li><a href="./menu2_2.html" class="sub_item">botbox+</a></li>
+                            <li><a href="./menu2_3.html" class="sub_item">beau;leaf</a></li>
+                            <li><a href="./menu2_4.html" class="sub_item">i-PiE</a></li>
+                            <li><div class="title">Platform</div></li>
+                            <li><a href="./menu2_5.html" class="sub_item">Autonomous Following <br>
+                                & Driving Module</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./menu3_1.html">Blog</a>
+                        <ul class="subMenu">
+                            <li><div class="title">Blog</div></li>
+                            <li><a href="./menu3_2.html" class="sub_item">Customer Stories</a></li>
+                            <li><a href="./menu3_3.html" class="sub_item">News</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./apply.html">Contact Us</a></li>
+                </ul>
+                <ul class="langMenu">
+                    <li class=""><a href="./index.html">KR</a></li>
+                    <li class="active">/</li>
+                    <li class="active"><a href="active">EN</a></li>
+                </ul>
+                <button type="button" class="sideMenuBtn">
+                    <img src="./img/common/side_menu_icon.png" alt="메뉴" class="icon" />
+                </button>
+            </div>
+        </header>
+        <section class="boardArti boardViewArti">
+            <div class="inner">
+                <div class="boardBanner">
+                    <!-- <div class="t1">Notice & News</div> -->
+                    <div class="t2">Notice & News</div>
+                </div>
+                
+                <article class="infoBoxWrap">
+                    <ul class="infoBoxList">
+                        <li class="full">
+                            <div class="infoBox">
+                                <div class="label">Title</div>
+                                <div class="txtBox viewBox">
+                                    <div class="txt">
+                                        Title Area. The website is now open.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="infoBox">
+                                <div class="label">Name</div>
+                                <div class="txtBox viewBox">
+                                    <div class="txt">
+                                        Administrator
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="infoBox">
+                                <div class="label">Views</div>
+                                <div class="txtBox viewBox">
+                                    <div class="txt">
+                                        9,999
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="infoBox">
+                                <div class="label">Date</div>
+                                <div class="txtBox viewBox">
+                                    <div class="txt">
+                                        20-05-18 13:22
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                      
+                    </ul>
+                </article>
+
+                <div class="menuBox">
+                    <ul class="menuList">
+                        <li>
+                            <a href="./basicList.html" class="item"><img src="./img/boardImg/list.png" alt="List"/> <p class="txt">List</p></a>
+                        </li>
+                        <li>
+                            <a href="#" class="item"><img src="./img/boardImg/corner-up-left.png" alt="Answer"/> <p class="txt">Answer</p></a>
+                        </li>
+                        <li>
+                            <a href="./write.html" class="item"><img src="./img/boardImg/write.png" alt="Write"/> <p class="txt">Write</p></a>
+                        </li>
+                        <li>
+                            <button type="button" class="item"><img src="./img/boardImg/threedot.png" alt="Edit"/> <p class="txt">Edit</p></button>
+                            <ul class="subMenu">
+                                <li><a href="#" class="item2">Edit</a></li>
+                                <li><a href="#" class="item2">Delete</a></li>
+                                <li><a href="#" class="item2">Copy</a></li>
+                                <li><a href="#" class="item2">Move</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <article class="viewContent">
+                    Some designers long for a clear methodology, while others react strongly, calling it a mindset that stifles creative thinking.
+                    However, it is hard to argue that a chaotic or spontaneous approach is desirable.
+                    The methodology being explained here is not a restrictive process, but rather something to be understood as a recipe that can be followed in any situation.
+                    However, it is not a method that must be followed mechanically.
+                    Imagine that a designer's creative spark is like electricity, and the method is the power grid that delivers it to the places where it can be best utilized.
+                </article>
+
+                <article class="viewAddArti">
+                    <a href="#">
+                        <div class="item file">
+                            <p class="t1">File.jpeg(741.5K)</p>
+                            <p class="t2">One-time download | DATE : 2020-05-05- 17:05:20</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item link">
+                            <p class="t1">http://www.link.com</p>
+                            <p class="t2">34 connections</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="prevNextArti">
+                    <div class="item">
+                        <div class="label">
+                            <img src="./img/boardImg/chevron-up.png" alt="Previous post" />
+                            Prev post
+                        </div>
+                        <div class="titleBox">
+                            <a href="#">
+                                Previous post title. Previous post title. Previous post title. Previous post title. Previous post title. Previous post title. Previous post title. Previous post title.
+                                Previous post title. Previous post title. Previous post title. Previous post title. Previous post title.                            
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="label">
+                            <img src="./img/boardImg/chevron-down.png" alt="Next post" />
+                            Next post
+                        </div>
+                        <div class="titleBox">
+                            <a href="#">
+                                Next post title. Next post title. Next post title. Next post title. Next post title. Next post title. Next post title. Next post title.
+                                Next post title. Next post title. Next post title. Next post title.
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- <article class="commentArti">
+                    <div class="commentBtn">
+                        <div class="count"> 댓글 <b>3</b></div>
+                        <button type="button" class="toggleBtn">
+                            <p class="close">닫기</p>
+                            <p class="open">열기</p>
+                            <img src="./img/boardImg/chevron-up.png" alt="화살표" class="icon"/>
+                        </button>
+                    </div>
+                    
+                    <div class="commentList">
+                        <div class="commentBox">
+                            <div class="commentTitle">
+                                <div class="leftBox">
+                                    <p class="name">닉네임</p>
+                                    <p class="date">21-02-17 14:57</p>
+                                </div>
+                                <div class="btnWrap">
+                                    <button type="button" class="menuBtn">
+                                        <img src="./img/boardImg/threedot.png" alt="메뉴" class="icon"/>
+                                    </button>
+                                    <ul class="subMenu">
+                                        <li><button type="button" class="item">수정</button></li>
+                                        <li><button type="button" class="item">답변</button></li>
+                                        <li><button type="button" class="item">삭제</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="commentText">
+                                진정한 의미에서의 디자인이란 세상을 바꾸고자 그것을 바라보는 어떤 방식을 말한다.<br/>
+                                디자이너가 세상을 바꾸려 한다면, 지금의 세상은 물론, 될 법한 세상의 모습도 볼 줄 알아야 한다.<br/>
+                                그들은 스케치하거나 모형을 만들어 아이디어에 구체적인 형태를 부여한다.<br/>
+                                디자이너란 아주 희박한 일말의 가능성을 포착하여 그것을 시각화하고, 다른 사람들에게는 <br/>
+                                그것이 현실이 되도록 만드는 사람들이다. 좋은디자인이란 대체할수 없는 가치를 가지는것 이다.
+                            </div>
+                        </div>
+                        <div class="commentBox">
+                            <div class="commentTitle">
+                                <div class="leftBox">
+                                    <p class="name">닉네임</p>
+                                    <p class="date">21-02-17 14:57</p>
+                                </div>
+                                <div class="btnWrap">
+                                    <button type="button" class="menuBtn">
+                                        <img src="./img/boardImg/threedot.png" alt="메뉴" class="icon"/>
+                                    </button>
+                                    <ul class="subMenu">
+                                        <li><button type="button" class="item">수정</button></li>
+                                        <li><button type="button" class="item">답변</button></li>
+                                        <li><button type="button" class="item">삭제</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="commentText">
+                                진정한 의미에서의 디자인이란 세상을 바꾸고자 그것을 바라보는 어떤 방식을 말한다.<br/>
+                                디자이너가 세상을 바꾸려 한다면, 지금의 세상은 물론, 될 법한 세상의 모습도 볼 줄 알아야 한다.<br/>
+                                그들은 스케치하거나 모형을 만들어 아이디어에 구체적인 형태를 부여한다.<br/>
+                                디자이너란 아주 희박한 일말의 가능성을 포착하여 그것을 시각화하고, 다른 사람들에게는 <br/>
+                                그것이 현실이 되도록 만드는 사람들이다. 좋은디자인이란 대체할수 없는 가치를 가지는것 이다.
+                            </div>
+                        </div>
+                        <div class="commentBox">
+                            <div class="commentTitle">
+                                <div class="leftBox">
+                                    <p class="name">닉네임</p>
+                                    <p class="date">21-02-17 14:57</p>
+                                </div>
+                                <div class="btnWrap">
+                                    <button type="button" class="menuBtn">
+                                        <img src="./img/boardImg/threedot.png" alt="메뉴" class="icon"/>
+                                    </button>
+                                    <ul class="subMenu">
+                                        <li><button type="button" class="item">수정</button></li>
+                                        <li><button type="button" class="item">답변</button></li>
+                                        <li><button type="button" class="item">삭제</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="commentText">
+                                진정한 의미에서의 디자인이란 세상을 바꾸고자 그것을 바라보는 어떤 방식을 말한다.<br/>
+                                디자이너가 세상을 바꾸려 한다면, 지금의 세상은 물론, 될 법한 세상의 모습도 볼 줄 알아야 한다.<br/>
+                                그들은 스케치하거나 모형을 만들어 아이디어에 구체적인 형태를 부여한다.<br/>
+                                디자이너란 아주 희박한 일말의 가능성을 포착하여 그것을 시각화하고, 다른 사람들에게는 <br/>
+                                그것이 현실이 되도록 만드는 사람들이다. 좋은디자인이란 대체할수 없는 가치를 가지는것 이다.
+                            </div>
+                        </div>
+                        <div class="commentBox reply">
+                            <div class="commentTitle">
+                                <div class="leftBox">
+                                    <img src="./img/boardImg/replyIcon.png" alt="답변" />
+                                    <p class="name">닉네임</p>
+                                    <p class="date">21-02-17 14:57</p>
+                                </div>
+                                <div class="btnWrap">
+                                    <button type="button" class="menuBtn">
+                                        <img src="./img/boardImg/threedot.png" alt="메뉴" class="icon"/>
+                                    </button>
+                                    <ul class="subMenu">
+                                        <li><button type="button" class="item">수정</button></li>
+                                        <li><button type="button" class="item">답변</button></li>
+                                        <li><button type="button" class="item">삭제</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="commentText">
+                                진정한 의미에서의 디자인이란 세상을 바꾸고자 그것을 바라보는 어떤 방식을 말한다.<br/>
+                                디자이너가 세상을 바꾸려 한다면, 지금의 세상은 물론, 될 법한 세상의 모습도 볼 줄 알아야 한다.<br/>
+                                그들은 스케치하거나 모형을 만들어 아이디어에 구체적인 형태를 부여한다.<br/>
+                                디자이너란 아주 희박한 일말의 가능성을 포착하여 그것을 시각화하고, 다른 사람들에게는 <br/>
+                                그것이 현실이 되도록 만드는 사람들이다. 좋은디자인이란 대체할수 없는 가치를 가지는것 이다.
+                            </div>
+                        </div>
+                        <div class="commentBox">
+                            <div class="commentTitle">
+                                <div class="leftBox">
+                                    <p class="name">닉네임</p>
+                                    <p class="date">21-02-17 14:57</p>
+                                </div>
+                                <div class="btnWrap">
+                                    <button type="button" class="menuBtn">
+                                        <img src="./img/boardImg/threedot.png" alt="메뉴" class="icon"/>
+                                    </button>
+                                    <ul class="subMenu">
+                                        <li><button type="button" class="item">수정</button></li>
+                                        <li><button type="button" class="item">답변</button></li>
+                                        <li><button type="button" class="item">삭제</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="commentText">
+                                진정한 의미에서의 디자인이란 세상을 바꾸고자 그것을 바라보는 어떤 방식을 말한다.<br/>
+                                디자이너가 세상을 바꾸려 한다면, 지금의 세상은 물론, 될 법한 세상의 모습도 볼 줄 알아야 한다.<br/>
+                                그들은 스케치하거나 모형을 만들어 아이디어에 구체적인 형태를 부여한다.<br/>
+                                디자이너란 아주 희박한 일말의 가능성을 포착하여 그것을 시각화하고, 다른 사람들에게는 <br/>
+                                그것이 현실이 되도록 만드는 사람들이다. 좋은디자인이란 대체할수 없는 가치를 가지는것 이다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commentWriteBox">
+                        <textarea class="commentWrite" placeholder="댓글 내용을 입력해주세요."></textarea>
+                        <div class="commentInfo">
+                            <input type="text" name="" placeholder="이름" class="ipt" required/>
+                            <input type="password" name="" placeholder="비밀번호" class="ipt" required/>
+                        </div>
+                        <div class="autoBox">자동등록방지 박스</div>
+                        <div class="btnWrap">
+                            <button type="button" class="submitBtn">댓글등록</button>
+                        </div>
+                    </div>
+                </article> -->
+
+            </div>
+        </section>
+        <footer>
+            <div class="inner">
+                <div class="box1">
+                    <img src="./img/common/footer_logo.png" alt="The Robotics" class="logo" />
+                    <div class="siteInfoList">
+                        <a href="#" class="item">Official Website</a>
+                        <a href="#" class="item privacyPopupBtn">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <ul class="site_infoList">
+                        <li>CEO: Dongwoo Kang </li><li class="bar"></li>
+                        <li>Business Registration Number: 837-81-02151</li><li class="bar"></li>
+                        <li>Email: contact@therobotics.kr</li>
+                        <li>Address: #802, 119 Jungang-ro, Jung-gu, Daejeon, South Korea  </li><li class="bar"></li>
+                        <li>Phone: +82-10-5153-5761</li>
+                    </ul>
+                    <div class="copy_right">@ artwa.All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
