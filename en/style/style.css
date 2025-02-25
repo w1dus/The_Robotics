@@ -848,7 +848,7 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 
 .sub.menu2 .article02 .inner{ display: flex; flex-direction: column; justify-content: center; gap: 20px; align-items: center; }
 .sub.menu2 .article02 img{ max-width: 100%; }
-.sub.menu2 .article02 .blackBg{ padding: 5px 30px; color: #fff; border-radius: 100px; background: #222; font-size: 30px; }
+.sub.menu2 .article02 .blackBg{ text-align: center; padding: 5px 30px; color: #fff; border-radius: 100px; background: #222; font-size: 30px; }
 
 @media screen and (max-width: 1250px) {
     .sub.menu2 .article02 .icon{ width: 25px; }
