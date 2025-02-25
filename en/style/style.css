@@ -1005,7 +1005,7 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 .sub.menu2 .peopleSection .itemList > li .item .icon.icon1{ background-image: url('../img/sub/menu2_1/peopleSection/icon1.png'); }
 .sub.menu2 .peopleSection .itemList > li .item .icon.icon2{ background-image: url('../img/sub/menu2_1/peopleSection/icon2.png'); }
 .sub.menu2 .peopleSection .itemList > li .item .icon.icon3{ background-image: url('../img/sub/menu2_1/peopleSection/icon3.png'); }
-.sub.menu2 .peopleSection .itemList > li .item .countDiv{ display: flex; font-size: 32px; font-weight: 700; align-items: flex-end; gap: 5px; }
+.sub.menu2 .peopleSection .itemList > li .item .countDiv{ display: flex; font-size: 28px; font-weight: 700; align-items: flex-end; gap: 5px; }
 .sub.menu2 .peopleSection .itemList > li .item .countDiv .count{ font-size: 2em; } 
 .sub.menu2 .peopleSection .itemList > li .item .countDiv .text{ margin-bottom: .2em; }
 
@@ -1221,7 +1221,7 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 }
 
 
-.sub.menu2_4 .viewlabSection{ display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background: transparent; padding-top: 220px; padding-bottom: 900px; }
+.sub.menu2_4 .viewlabSection{ display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background: transparent; padding-top: 220px; padding-bottom: 850px; }
 
 .sub.menu2_4 .viewlabSection .pipe{ z-index: 2; position: absolute; }
 .sub.menu2_4 .viewlabSection .pipe1{ top: -90px; }
@@ -1230,7 +1230,7 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 .sub.menu2_4 .viewlabSection .itemList > li + li{ margin-top: 158px; }
 
 @media screen and (max-width: 1250px) {
-    .sub.menu2_4 .viewlabSection{ padding-bottom: 886px; }
+    .sub.menu2_4 .viewlabSection{ padding-bottom: 820px; }
     .sub.menu2_4 .viewlabSection .pipe{ width: 1800px; }
     .sub.menu2_4 .viewlabSection .pipe1{ top: -96px; }
     .sub.menu2_4 .viewlabSection .pipe2{ top: 816px; }
@@ -1312,3 +1312,5 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 
 /* @@@ 2/19 최인수 끝 @@@ */
 
+body:not(.fp-responsive) .fp-overflow::-webkit-scrollbar { display: none; }
+body:not(.fp-responsive) .fp-overflow{  -ms-overflow-style: none; }

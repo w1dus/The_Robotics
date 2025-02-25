@@ -1261,3 +1261,6 @@ footer .box2 .copy_right{ margin-top: 20px; font-size: 14px; }
 .sub.menu2_4 .productSection .downloadBoxWrap .downloadBtn { max-width: 590px; }
 .sub.menu2_4 .productSection .downloadBoxWrap { justify-content: center; align-items: center; }
 
+
+body:not(.fp-responsive) .fp-overflow::-webkit-scrollbar { display: none; }
+body:not(.fp-responsive) .fp-overflow{  -ms-overflow-style: none; }
